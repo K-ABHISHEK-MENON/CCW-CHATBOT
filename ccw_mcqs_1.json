@@ -1,0 +1,666 @@
+[
+  {
+    "question": "The theoretical maximum efficiency of a half wave diode rectifier is",
+    "options": {
+      "a)": "40.6%",
+      "b)": "50%",
+      "c)": "81.2%",
+      "d)": "78%"
+    },
+    "correct_option": "a)",
+    "explanation": "The efficiency is 40.6%, calculated from power ratio. It is less than full wave rectifier. This comes from analyzing output DC power vs input AC."
+  },
+  {
+    "question": "Which circuit is called emitter follower?",
+    "options": {
+      "a)": "Common Emitter",
+      "b)": "Common Collector",
+      "c)": "Common Base",
+      "d)": "Both a and b"
+    },
+    "correct_option": "b)",
+    "explanation": "Common collector is also called emitter follower. It has unity gain, high input and low output impedance."
+  },
+  {
+    "question": "Crossover distortion is the characteristic of output stage",
+    "options": {
+      "a)": "Class A",
+      "b)": "Class B",
+      "c)": "Class AB",
+      "d)": "None"
+    },
+    "correct_option": "b)",
+    "explanation": "In class B, distortion occurs at zero crossing. This is due to transistors turning OFF near 0V input."
+  },
+  {
+    "question": "For a BJT, α and β are related as",
+    "options": {
+      "a)": "α = β / (1 + α)",
+      "b)": "β = α / (1 + α)",
+      "c)": "β = α / (1 - α)",
+      "d)": "β = α / (1 + β)"
+    },
+    "correct_option": "c)",
+    "explanation": "The correct relation: β = α / (1 - α). This is derived from definitions of α = I_C/I_E, β = I_C/I_B."
+  },
+  {
+    "question": "The unit of voltage gain is",
+    "options": {
+      "a)": "dB",
+      "b)": "Volt",
+      "c)": "Ampere",
+      "d)": "No unit"
+    },
+    "correct_option": "a)",
+    "explanation": "Voltage gain is dimensionless but often expressed in dB. dB scale helps compare very large/small gain values."
+  },
+  {
+    "question": "Purpose of a coupling capacitor in amplifier?",
+    "options": {
+      "a)": "Filter noise",
+      "b)": "Block DC, allow AC",
+      "c)": "Provide power",
+      "d)": "Increase gain"
+    },
+    "correct_option": "b)",
+    "explanation": "Coupling capacitor blocks DC between stages. It allows the AC signal to pass to the next stage."
+  },
+  {
+    "question": "In an oscillator the total phase shift around loop must be",
+    "options": {
+      "a)": "180°",
+      "b)": "270°",
+      "c)": "90°",
+      "d)": "360°"
+    },
+    "correct_option": "d)",
+    "explanation": "Barkhausen criterion: gain = 1 and phase shift = 360°. This ensures sustained oscillations."
+  },
+  {
+    "question": "A bridge rectifier with 20sin ωt input has average and RMS output:",
+    "options": {
+      "a)": "20/π, 20/√2",
+      "b)": "39V, 40V",
+      "c)": "19V, 39V",
+      "d)": "None"
+    },
+    "correct_option": "a)",
+    "explanation": "Avg = 2Vm/π, RMS = Vm/√2. For Vm = 20, get 40/π and 20/√2."
+  },
+  {
+    "question": "The unit of α is",
+    "options": {
+      "a)": "V",
+      "b)": "V-s",
+      "c)": "J",
+      "d)": "None"
+    },
+    "correct_option": "d)",
+    "explanation": "α = I_C / I_E is a current ratio. So it is dimensionless (no units)."
+  },
+  {
+    "question": "If amplifier stage gains are 12dB, 16dB, 8dB, total gain is",
+    "options": {
+      "a)": "15dB",
+      "b)": "12dB",
+      "c)": "36dB",
+      "d)": "8dB"
+    },
+    "correct_option": "c)",
+    "explanation": "Total dB gain = 12 + 16 + 8 = 36dB. dB values are additive in cascaded systems."
+  },
+  {
+  "question": "Transformer utilization factor of half wave rectifier is ..........",
+  "options": {
+    "a)": "0.287",
+    "b)": "0.693",
+    "c)": "0.812",
+    "d)": "0.480"
+  },
+  "correct_option": "a)",
+  "explanation": "TUF for half-wave rectifier = π / (4√2) ≈ 0.287."
+},
+{
+  "question": "FET is a ............ device.",
+  "options": {
+    "a)": "Unipolar",
+    "b)": "Bipolar",
+    "c)": "Tripolar",
+    "d)": "None of the mentioned"
+  },
+  "correct_option": "a)",
+  "explanation": "FET conducts using either electrons or holes → unipolar device."
+},
+{
+  "question": "The voltage gain of amplifier stage is lowest in ..........",
+  "options": {
+    "a)": "Common Emitter",
+    "b)": "Common Base",
+    "c)": "Common Collector",
+    "d)": "Same in all configuration"
+  },
+  "correct_option": "c)",
+  "explanation": "Common collector (emitter follower) has voltage gain ≈ 1, so lowest."
+},
+{
+  "question": "Transistor is in saturation when ..........",
+  "options": {
+    "a)": "IB = IC",
+    "b)": "IB > IC/βdc",
+    "c)": "IB = 0",
+    "d)": "IB < IC/βdc"
+  },
+  "correct_option": "b)",
+  "explanation": "In saturation, base current is more than required for active region → IB > IC/β."
+},
+{
+  "question": "When voltage gain AV is greater than one, then the voltage gain in dB is ........",
+  "options": {
+    "a)": "Negative",
+    "b)": "Positive",
+    "c)": "Zero",
+    "d)": "None of the mentioned"
+  },
+  "correct_option": "b)",
+  "explanation": "AV > 1 ⇒ 20log₁₀(AV) > 0 dB → gain in dB is positive."
+},
+{
+  "question": "Crossover distortion is the characteristic of ............... output stage",
+  "options": {
+    "a)": "Class A",
+    "b)": "Class B",
+    "c)": "Class AB",
+    "d)": "None of the mentioned"
+  },
+  "correct_option": "b)",
+  "explanation": "In Class B, both transistors conduct for 180° each. Crossover point (zero) causes distortion."
+},
+{
+  "question": "A cascaded amplifier has the advantages of ............",
+  "options": {
+    "a)": "Low input capacitance",
+    "b)": "Low input impedance",
+    "c)": "High transconductance",
+    "d)": "Large voltage gain"
+  },
+  "correct_option": "d)",
+  "explanation": "Cascading stages multiplies voltage gains → overall large gain."
+},
+{
+  "question": "Negative feedback amplifier is a ................",
+  "options": {
+    "a)": "Degenerative Feedback",
+    "b)": "Regenerative Feedback",
+    "c)": "Both",
+    "d)": "None of the mentioned"
+  },
+  "correct_option": "a)",
+  "explanation": "Negative feedback reduces gain but improves stability → degenerative type."
+},
+{
+  "question": "If the gain of positive feedback amplifier is 18 and feedback factor is 0.5, the gain of the amplifier without feedback will be",
+  "options": {
+    "a)": "18",
+    "b)": "1.8",
+    "c)": "180",
+    "d)": "3.6"
+  },
+  "correct_option": "c)",
+  "explanation": "For positive feedback: Af = A / (1 - Aβ) → 18 = A / (1 - 0.5A) → solve gives A = 180."
+},
+{
+  "question": "A Hartley oscillator is used for generating ........ frequency oscillation",
+  "options": {
+    "a)": "Very low",
+    "b)": "Radio",
+    "c)": "Microwave",
+    "d)": "Audio"
+  },
+  "correct_option": "b)",
+  "explanation": "Hartley oscillators are used for generating radio frequency (RF) signals."
+},
+
+{
+  "question": "The early effect in BJT is caused by",
+  "options": {
+    "a)": "Fast turn OFF",
+    "b)": "Fast turn ON",
+    "c)": "Large emitter to base forward bias",
+    "d)": "Large collector to base reverse bias"
+  },
+  "correct_option": "d)",
+  "explanation": "Early effect is due to the widening of the base-collector depletion region with increased reverse bias, causing variation in collector current."
+},
+{
+  "question": "The efficiency of a half-wave rectifier under best conditions is:",
+  "options": {
+    "a)": "25.5%",
+    "b)": "35%",
+    "c)": "40.6%",
+    "d)": "81.2%"
+  },
+  "correct_option": "c)",
+  "explanation": "The theoretical maximum efficiency of a half-wave rectifier is approximately 40.6%."
+},
+{
+  "question": "Which of the following BJT configurations has the highest power gain?",
+  "options": {
+    "a)": "Common Collector",
+    "b)": "Common Emitter",
+    "c)": "Common Base",
+    "d)": "None of the above"
+  },
+  "correct_option": "b)",
+  "explanation": "Common emitter configuration offers both high voltage and current gain, resulting in the highest power gain."
+},
+{
+  "question": "What is the purpose of a coupling capacitor in an amplifier circuit?",
+  "options": {
+    "a)": "To filter out high-frequency noise",
+    "b)": "To block DC and allow AC signals to pass",
+    "c)": "To provide power supply",
+    "d)": "To increase the gain"
+  },
+  "correct_option": "b)",
+  "explanation": "Coupling capacitors block DC and pass AC signals between amplifier stages."
+},
+{
+  "question": "What is the purpose of negative feedback in an amplifier?",
+  "options": {
+    "a)": "Increase distortion",
+    "b)": "Increase gain",
+    "c)": "Improve stability and reduce distortion",
+    "d)": "Decrease bandwidth"
+  },
+  "correct_option": "c)",
+  "explanation": "Negative feedback reduces distortion, improves stability and linearity, though it may reduce gain."
+},
+{
+  "question": "In a transistor, if β = 100 and collector current is 10 mA, then IB is .............",
+  "options": {
+    "a)": "100 mA",
+    "b)": "10.10 mA",
+    "c)": "110 mA",
+    "d)": "None of the above"
+  },
+  "correct_option": "d)",
+  "explanation": "IB = IC / β = 10 mA / 100 = 0.1 mA → None of the above."
+},
+{
+  "question": "In the hybrid-π model for BJT small signal analysis, rπ denotes",
+  "options": {
+    "a)": "Input resistance",
+    "b)": "Transconductance",
+    "c)": "Output resistance",
+    "d)": "Transimpedance"
+  },
+  "correct_option": "a)",
+  "explanation": "rπ is the resistance looking into the base of the transistor in the small-signal model."
+},
+{
+  "question": "Oscillators require ...............",
+  "options": {
+    "a)": "No feedback",
+    "b)": "Negative feedback",
+    "c)": "Positive feedback",
+    "d)": "None of the above"
+  },
+  "correct_option": "c)",
+  "explanation": "Oscillators rely on positive feedback to sustain oscillations."
+},
+{
+  "question": "The unit of voltage gain is ..........",
+  "options": {
+    "a)": "Volts",
+    "b)": "Amps",
+    "c)": "dB",
+    "d)": "It is dimensionless"
+  },
+  "correct_option": "d)",
+  "explanation": "Since voltage gain is a ratio, it has no physical unit. However, it is commonly expressed in decibels (dB)."
+},
+{
+  "question": "How many cascaded stages of CE amplifier will result in polarity inversion of the input signal?",
+  "options": {
+    "a)": "Two",
+    "b)": "Three",
+    "c)": "Four",
+    "d)": "None of these"
+  },
+  "correct_option": "b)",
+  "explanation": "Each CE amplifier stage inverts the signal. So, 3 stages result in an overall inversion."
+},
+{
+  "question": "The wave shaping elements are",
+  "options": {
+    "a)": "Resistor",
+    "b)": "Capacitor",
+    "c)": "Diode",
+    "d)": "All are correct"
+  },
+  "correct_option": "d)",
+  "explanation": "Wave shaping circuits typically use resistors, capacitors, and diodes to modify signal waveforms."
+},
+{
+  "question": "The formula used to calculate the time constant in inductive circuit is",
+  "options": {
+    "a)": "RC",
+    "b)": "L/R",
+    "c)": "R/C",
+    "d)": "LC/R"
+  },
+  "correct_option": "b)",
+  "explanation": "Time constant τ in an RL circuit is τ = L / R."
+},
+{
+  "question": "Transistor biasing represents ............... Conditions",
+  "options": {
+    "a)": "AC",
+    "b)": "DC",
+    "c)": "Both AC and DC",
+    "d)": "None of these"
+  },
+  "correct_option": "b)",
+  "explanation": "Biasing sets the DC operating point of the transistor."
+},
+{
+  "question": "For faithful amplification by a transistor circuit, the value of V_BE should ......... For a silicon transistor",
+  "options": {
+    "a)": "Be zero",
+    "b)": "Be 0.01 V",
+    "c)": "Not fall below 0.7 V",
+    "d)": "Be between 0 V and 0.1 V"
+  },
+  "correct_option": "c)",
+  "explanation": "A silicon transistor requires about 0.7 V base-emitter voltage for conduction."
+},
+{
+  "question": "If the collector supply is 10 V, then collector cut off voltage under d.c. conditions is ............",
+  "options": {
+    "a)": "20 V",
+    "b)": "5 V",
+    "c)": "2 V",
+    "d)": "10 V"
+  },
+  "correct_option": "d)",
+  "explanation": "Collector cut-off voltage is the same as the collector supply voltage in cut-off condition, i.e., 10 V."
+},
+{
+  "question": "The input capacitor in an amplifier is the ..................... capacitor",
+  "options": {
+    "a)": "Coupling",
+    "b)": "Bypass",
+    "c)": "Leakage",
+    "d)": "None of the above"
+  },
+  "correct_option": "a)",
+  "explanation": "Coupling capacitor is used at the input to block DC and allow AC signals to pass."
+},
+{
+  "question": "If a transistor amplifier draws 2 mA when input voltage is 10 V, then its input impedance is ...,",
+  "options": {
+    "a)": "20 KΩ",
+    "b)": "2 KΩ",
+    "c)": "10 KΩ",
+    "d)": "5 KΩ"
+  },
+  "correct_option": "d)",
+  "explanation": "Z_in = V_in / I_in = 10 / (2 × 10^-3) = 5000 Ω = 5 kΩ."
+},
+{
+  "question": "A CE amplifier is also called ............... circuit",
+  "options": {
+    "a)": "Grounded Emitter",
+    "b)": "Grounded Base",
+    "c)": "Grounded Collector",
+    "d)": "None of these"
+  },
+  "correct_option": "a)",
+  "explanation": "In CE amplifier, the emitter is common to both input and output — hence grounded."
+},
+{
+  "question": "If a three stage amplifier has individual stage gains of 10 dB, 6 dB and 15 dB; then the total gain in dB is",
+  "options": {
+    "a)": "600 dB",
+    "b)": "24 dB",
+    "c)": "14 dB",
+    "d)": "31 dB"
+  },
+  "correct_option": "d)",
+  "explanation": "Total gain in dB = 10 + 6 + 15 = 31 dB."
+},
+{
+  "question": "Ideal regulated power supply is one which has voltage regulation of ……",
+  "options": {
+    "a)": "0%",
+    "b)": "1%",
+    "c)": "10%",
+    "d)": "5%"
+  },
+  "correct_option": "a)",
+  "explanation": "An ideal voltage regulator maintains a constant output regardless of changes in load or input voltage. So, ideal voltage regulation is 0%."
+},
+{
+  "question": "An RC Low Pass filter acts as an integrator for an analog signal of time period T if the time constant RC of the circuit satisfies",
+  "options": {
+    "a)": "RC \\gg 16T",
+    "b)": "RC = T",
+    "c)": "RC \\ll 16T",
+    "d)": "RC = 0.0016T"
+  },
+  "correct_option": "c)",
+  "explanation": "For the circuit to act as an integrator, the time constant must be much smaller than the signal period, i.e., RC \\ll T."
+},
+{
+  "question": "In an amplifier circuit, if the emitter is at AC ground potential, then the configuration is/are",
+  "options": {
+    "a)": "Common Base Configuration",
+    "b)": "Common Collector Configuration",
+    "c)": "Common Emitter Configuration",
+    "d)": "Common Base and Common Collector Configuration"
+  },
+  "correct_option": "a)",
+  "explanation": "In a common base configuration, the emitter is usually grounded for AC signals."
+},
+{
+  "question": "In a CE amplifier, the input impedance is equal to the ratio of",
+  "options": {
+    "a)": "AC base voltage to AC base current",
+    "b)": "AC base voltage to AC emitter current",
+    "c)": "AC emitter voltage to AC collector current",
+    "d)": "AC collector voltage to AC collector current"
+  },
+  "correct_option": "a)",
+  "explanation": "Input impedance is defined as the ratio of input voltage to input current, which in this case is base voltage to base current."
+},
+{
+  "question": "In an amplifier, the coupling capacitors are employed for",
+  "options": {
+    "a)": "Increasing the gain",
+    "b)": "Matching the impedance",
+    "c)": "Controlling the output",
+    "d)": "Preventing DC mixing with input or output"
+  },
+  "correct_option": "d)",
+  "explanation": "Coupling capacitors block DC components while allowing AC signals to pass, isolating stages."
+},
+{
+  "question": "Consider the voltage gain of an amplifier without and with feedback are 100 and 20 respectively. Find the negative feedback factor of the feedback network (in %)",
+  "options": {
+    "a)": "4%",
+    "b)": "5%",
+    "c)": "20%",
+    "d)": "80%"
+  },
+  "correct_option": "b)",
+  "explanation": "Feedback factor β = (A - A_f) / (A * A_f) = (100 - 20) / (100 * 20) = 0.05 = 5%."
+},
+{
+  "question": "In an oscillator, the total phase shift around the loop must be",
+  "options": {
+    "a)": "180°",
+    "b)": "90°",
+    "c)": "270°",
+    "d)": "0°"
+  },
+  "correct_option": "d)",
+  "explanation": "For oscillation (Barkhausen criterion), the loop gain must be unity and the total phase shift around the loop must be 0° or a multiple of 360°."
+},
+{
+  "question": "Push-pull configuration is used in power amplifiers to",
+  "options": {
+    "a)": "Improve power handling capability",
+    "b)": "Balance out odd harmonics",
+    "c)": "Balance out even harmonics",
+    "d)": "Reduce input impedance"
+  },
+  "correct_option": "c)",
+  "explanation": "Push-pull amplifiers cancel even harmonics due to their symmetric configuration, improving linearity."
+},
+{
+  "question": "In a series regulator, what is the purpose of fold-back limiting?",
+  "options": {
+    "a)": "To provide more current in the case of a short circuit",
+    "b)": "To limit output voltage if input voltage goes too high",
+    "c)": "To bypass the pass-transistor, if the pass-transistor should fail",
+    "d)": "To provide current up to a maximum, but drop current to a lower value when the output becomes shorted, to prevent overheating of the device"
+  },
+  "correct_option": "d)",
+  "explanation": "Fold-back current limiting reduces the output current under fault conditions to protect the series pass element from damage."
+},
+{
+  "question": "Diode Connected MOSFET acts as",
+  "options": {
+    "a)": "Voltage Source",
+    "b)": "Current Source",
+    "c)": "Load Impedance",
+    "d)": "Buffer"
+  },
+  "correct_option": "c)",
+  "explanation": "A diode-connected MOSFET is often used as a resistive load due to its I-V characteristics acting like a load impedance."
+},
+{
+  "question": "When two amplifiers each of bandwidth f_H = 10 kHz are cascaded, the overall bandwidth becomes",
+  "options": {
+    "a)": "10 kHz",
+    "b)": "6.4 kHz",
+    "c)": "5 kHz",
+    "d)": "20 kHz"
+  },
+  "correct_option": "b)",
+  "explanation": "Cascading identical stages reduces the bandwidth due to the cumulative frequency response; for two stages, BW ≈ 0.707 × f_H."
+},
+{
+    "question": "Which of the following power amplifiers has highest efficiency",
+    "options": {
+        "a)": "Class A",
+        "b)": "Class B",
+        "c)": "Class AB",
+        "d)": "Class C"
+    },
+    "correct_option": "d)",
+    "explanation": "Class C amplifiers operate with conduction angles less than 180° and achieve the highest efficiency, typically over 80%."
+},
+{
+    "question": "A bypass capacitor provides",
+    "options": {
+        "a)": "DC ground",
+        "b)": "AC ground",
+        "c)": "Both DC and AC ground",
+        "d)": "None of these"
+    },
+    "correct_option": "b)",
+    "explanation": "A bypass capacitor offers a low-impedance path to ground for AC signals, effectively grounding them while leaving DC unaffected."
+},
+{
+    "question": "In an oscillator the total phase shift around the loop must be",
+    "options": {
+        "a)": "180°",
+        "b)": "270°",
+        "c)": "0°",
+        "d)": "90°"
+    },
+    "correct_option": "c)",
+    "explanation": "For sustained oscillation, the Barkhausen criterion requires the total phase shift around the loop to be 0° or 360°."
+},
+{
+    "question": "A bridge rectifier circuit using ideal diode has an input voltage of 20sinωt. The average and rms value of output voltage are",
+    "options": {
+        "a)": "(40/π) V and (20/√2) V",
+        "b)": "(20/π) V and (20/√2) V",
+        "c)": "(40/π) V and 10 V",
+        "d)": "(20/π) V and 10 V"
+    },
+    "correct_option": "a)",
+    "explanation": "For a bridge rectifier, average output voltage is (2Vm/π) = 40/π, and RMS is Vm/√2 = 20/√2 ≈ 14.14."
+},
+{
+    "question": "An ideal power supply has",
+    "options": {
+        "a)": "Zero internal resistance",
+        "b)": "Infinite internal resistance",
+        "c)": "High output resistance",
+        "d)": "Both b and c"
+    },
+    "correct_option": "a)",
+    "explanation": "An ideal power supply delivers constant voltage regardless of load and thus has zero internal resistance."
+},
+{
+    "question": "A full wave rectifier circuit using centre tapped transformer, input frequency is 50 Hz. The frequency of the output is",
+    "options": {
+        "a)": "100 Hz",
+        "b)": "50 Hz",
+        "c)": "25 Hz",
+        "d)": "200 Hz"
+    },
+    "correct_option": "a)",
+    "explanation": "A full wave rectifier outputs two pulses per input cycle, so output frequency is double the input, i.e., 100 Hz."
+},
+{
+    "question": "A clipper",
+    "options": {
+        "a)": "Adds a dc component to the input signal",
+        "b)": "Removes signal voltages above or below a specified value",
+        "c)": "Both a and b",
+        "d)": "Either a or b"
+    },
+    "correct_option": "b)",
+    "explanation": "A clipper \"clips\" part of the waveform above or below a threshold, modifying the signal shape."
+},
+{
+    "question": "Which circuit is called emitter follower?",
+    "options": {
+        "a)": "Common Emitter",
+        "b)": "Common Collector",
+        "c)": "Common Base",
+        "d)": "Both a and b"
+    },
+    "correct_option": "b)",
+    "explanation": "The Common Collector configuration is also called an emitter follower due to its unity gain and low output impedance."
+},
+{
+    "question": "For a BJT, α and β are related as",
+    "options": {
+        "a)": "α = β / (1 + β)",
+        "b)": "β = 1 / (1 + α)",
+        "c)": "β = α / (1 + α)",
+        "d)": "β = α / (1 - α)"
+    },
+    "correct_option": "a)",
+    "explanation": "The relation is α = β / (1 + β), derived from the current gain definitions of BJT."
+},
+{
+    "question": "N-channel FETs are superior to P-channel FETs because",
+    "options": {
+        "a)": "Mobility of electrons is smaller than that of holes",
+        "b)": "Mobility of electrons is greater than that of holes",
+        "c)": "They consume less power",
+        "d)": "They have high switching time"
+    },
+    "correct_option": "b)",
+    "explanation": "Electrons have higher mobility than holes, making N-channel FETs faster and more efficient."
+}
+
+
+
+]

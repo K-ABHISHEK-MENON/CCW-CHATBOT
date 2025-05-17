@@ -1,0 +1,669 @@
+[
+
+
+{
+  "question": "10111 is equal to decimal number",
+  "options": {
+    "a)": "47",
+    "b)": "23",
+    "c)": "17",
+    "d)": "37"
+  },
+  "correct_option": "b)",
+  "explanation": "10111₂ = 1·2⁴ + 0·2³ + 1·2² + 1·2¹ + 1·2⁰ = 16 + 4 + 2 + 1 = 23."
+},
+{
+  "question": "$7BF_{16}$ = (........)$_2$",
+  "options": {
+    "a)": "0111 1011 1110",
+    "b)": "0111 1011 1111",
+    "c)": "0111 1011",
+    "d)": "0111 1011 0011"
+  },
+  "correct_option": "b)",
+  "explanation": "$7BF_{16}$ = 0111 1011 1111₂. Hex to binary: 7 = 0111, B = 1011, F = 1111."
+},
+{
+  "question": "In Boolean algebra $\\overline{A} + A$ is equal to",
+  "options": {
+    "a)": "1",
+    "b)": "A",
+    "c)": "$A^2$",
+    "d)": "0"
+  },
+  "correct_option": "a)",
+  "explanation": "$\\overline{A} + A = 1$ is a basic identity of Boolean algebra."
+},
+{
+  "question": "Which gate corresponds to the action of parallel switches?",
+  "options": {
+    "a)": "AND",
+    "b)": "OR",
+    "c)": "NAND",
+    "d)": "NOR"
+  },
+  "correct_option": "b)",
+  "explanation": "In parallel switches, current flows if any path is closed — like an OR gate."
+},
+{
+  "question": "A sequential circuit with twelve states will have:",
+  "options": {
+    "a)": "10 flip-flop",
+    "b)": "12 flip-flop",
+    "c)": "3 flip-flop",
+    "d)": "4 flip-flop"
+  },
+  "correct_option": "d)",
+  "explanation": "Minimum n such that $2^n \\geq 12$ gives $n = 4$."
+},
+{
+  "question": "As compared to TTL, CMOS logic has",
+  "options": {
+    "a)": "Higher speed of operation",
+    "b)": "Higher power dissipation",
+    "c)": "Smaller physical size",
+    "d)": "All of the above"
+  },
+  "correct_option": "d)",
+  "explanation": "CMOS generally has less power use, smaller size, and recent CMOS has higher speeds."
+},
+{
+  "question": "A mod 4 counter will count",
+  "options": {
+    "a)": "From 0 to 4",
+    "b)": "From 0 to 3",
+    "c)": "From any number n to n+4",
+    "d)": "None of the above"
+  },
+  "correct_option": "b)",
+  "explanation": "MOD-4 counter has 4 states: 0, 1, 2, 3."
+},
+{
+  "question": "A counter has N flip flops. The total number of states are",
+  "options": {
+    "a)": "N",
+    "b)": "$2^N$",
+    "c)": "2N",
+    "d)": "$4^N$"
+  },
+  "correct_option": "b)",
+  "explanation": "Each flip-flop has 2 states. So, total states = $2^N$."
+},
+{
+  "question": "Which logic device is called a data distributor?",
+  "options": {
+    "a)": "MUX",
+    "b)": "DEMUX",
+    "c)": "Encoder",
+    "d)": "Decoder"
+  },
+  "correct_option": "b)",
+  "explanation": "DEMUX distributes a single input to multiple outputs."
+},
+{
+  "question": "Which has lowest propagation delay?",
+  "options": {
+    "a)": "ECL",
+    "b)": "TTL",
+    "c)": "CMOS",
+    "d)": "PMOS"
+  },
+  "correct_option": "a)",
+  "explanation": "Emitter Coupled Logic (ECL) has fastest switching speed and lowest delay."
+},
+
+{
+  "question": "The 2’s complement representation of the decimal number (-4) is",
+  "options": {
+    "a)": "1011",
+    "b)": "1010",
+    "c)": "1100",
+    "d)": "0100"
+  },
+  "correct_option": "c)",
+  "explanation": "Binary of 4 is 0100. One's complement = 1011. Add 1 → 1100."
+},
+{
+  "question": "If (0.100)₂ = (X)₁₀, then X is",
+  "options": {
+    "a)": "0.5",
+    "b)": "0.4",
+    "c)": "0.2",
+    "d)": "0.01"
+  },
+  "correct_option": "a)",
+  "explanation": "(0.100)₂ = 1 × 2⁻¹ = 0.5"
+},
+{
+  "question": "The expression (X + X̄)Y is equal to",
+  "options": {
+    "a)": "1",
+    "b)": "0",
+    "c)": "X+Y",
+    "d)": "1+Y"
+  },
+  "correct_option": "a)",
+  "explanation": "(X + X̄) = 1, so 1 · Y = Y"
+},
+{
+  "question": "In Boolean algebra Ā + A is equal to",
+  "options": {
+    "a)": "1",
+    "b)": "A",
+    "c)": "A²",
+    "d)": "0"
+  },
+  "correct_option": "a)",
+  "explanation": "Complementation law: A + Ā = 1"
+},
+{
+  "question": "The minimum number of gates required to realize the function AB + C̄ using NAND only is",
+  "options": {
+    "a)": "2",
+    "b)": "3",
+    "c)": "4",
+    "d)": "6"
+  },
+  "correct_option": "b)",
+  "explanation": "Needs 2 NANDs for AB, 1 NAND for C̄, and 1 NAND for ORing → Minimum is 3 using De Morgan."
+},
+{
+  "question": "Which logic device is called a data distributor?",
+  "options": {
+    "a)": "MUX",
+    "b)": "DEMUX",
+    "c)": "Encoder",
+    "d)": "Decoder"
+  },
+  "correct_option": "b)",
+  "explanation": "DEMUX distributes one input line to multiple output lines."
+},
+{
+  "question": "How many full adders are required in a serial adder to perform 8-bit addition?",
+  "options": {
+    "a)": "2",
+    "b)": "1",
+    "c)": "3",
+    "d)": "4"
+  },
+  "correct_option": "b)",
+  "explanation": "Serial adder reuses a single full adder for all bits sequentially."
+},
+{
+  "question": "Ring and Johnson counters are:",
+  "options": {
+    "a)": "Synchronous counter",
+    "b)": "Asynchronous counter",
+    "c)": "Binary counter",
+    "d)": "Shift registers"
+  },
+  "correct_option": "d)",
+  "explanation": "Both are specialized forms of shift registers with feedback."
+},
+{
+  "question": "An 8-bit SISO mode needs ........... Clock pulses to load an 8-bit number into a register",
+  "options": {
+    "a)": "4",
+    "b)": "1",
+    "c)": "8",
+    "d)": "2"
+  },
+  "correct_option": "c)",
+  "explanation": "SISO = Serial In Serial Out → needs 8 pulses for 8 bits."
+},
+{
+  "question": "Which of the following technology results in least power dissipation",
+  "options": {
+    "a)": "TTL",
+    "b)": "DTL",
+    "c)": "NMOS",
+    "d)": "CMOS"
+  },
+  "correct_option": "d)",
+  "explanation": "CMOS uses complementary transistors → low static power consumption."
+},
+
+{
+  "question": "If {432}_8 = (X)_7 then the value of X is:",
+  "options": {
+    "a)": "522",
+    "b)": "225",
+    "c)": "252",
+    "d)": "250"
+  },
+  "correct_option": "b)",
+  "explanation": "Convert 432₈ to decimal = 4×64 + 3×8 + 2 = 282. Now convert 282 to base-7 → 225₇."
+},
+{
+  "question": "A (7,4) Hamming code contains ............ parity bits.",
+  "options": {
+    "a)": "4",
+    "b)": "2",
+    "c)": "3",
+    "d)": "1"
+  },
+  "correct_option": "c)",
+  "explanation": "In (7,4) code: 7 total bits – 4 data bits = 3 parity bits."
+},
+{
+  "question": "The decimal equivalent of binary 10110.11 is:",
+  "options": {
+    "a)": "16.75",
+    "b)": "20.75",
+    "c)": "16.50",
+    "d)": "22.75"
+  },
+  "correct_option": "d)",
+  "explanation": "10110 = 22, .11 = 0.75 → Total = 22.75"
+},
+{
+  "question": "If A and B are Boolean variables, then what is (A+B)·(A+B) equal to?",
+  "options": {
+    "a)": "B",
+    "b)": "A",
+    "c)": "A+B",
+    "d)": "AB"
+  },
+  "correct_option": "c)",
+  "explanation": "(A+B)·(A+B) = A+B (Idempotent law)"
+},
+{
+  "question": "The dual of A+B+C is ................",
+  "options": {
+    "a)": "A.B.C",
+    "b)": "A+B+C",
+    "c)": "(A+B).C",
+    "d)": "(A.B+C)"
+  },
+  "correct_option": "a)",
+  "explanation": "Dual: replace + with · and vice versa → A·B·C"
+},
+{
+  "question": "Which gates correspond to the action of parallel switches?",
+  "options": {
+    "a)": "AND",
+    "b)": "OR",
+    "c)": "NAND",
+    "d)": "NOR"
+  },
+  "correct_option": "b)",
+  "explanation": "OR gate behaves like parallel switches—any input HIGH gives output HIGH."
+},
+{
+  "question": "An OR gate has 4 inputs, in which one input is high and other three are low. The output:",
+  "options": {
+    "a)": "Is low",
+    "b)": "Is high",
+    "c)": "Alternately high and low",
+    "d)": "None of these"
+  },
+  "correct_option": "b)",
+  "explanation": "OR gate outputs HIGH if any input is HIGH."
+},
+{
+  "question": "A sequential circuit with twelve states will have:",
+  "options": {
+    "a)": "10 flip-flops",
+    "b)": "12 flip-flops",
+    "c)": "4 flip-flops",
+    "d)": "3 flip-flops"
+  },
+  "correct_option": "c)",
+  "explanation": "2ⁿ ≥ 12 → n = 4 flip-flops (as 2⁴ = 16)"
+},
+{
+  "question": "Which of the following is not a sequential circuit?",
+  "options": {
+    "a)": "flip-flop",
+    "b)": "counter",
+    "c)": "register",
+    "d)": "decoder"
+  },
+  "correct_option": "d)",
+  "explanation": "Decoder is a combinational circuit; others are sequential."
+},
+{
+  "question": "The noise margin of a TTL gate is about:",
+  "options": {
+    "a)": "0.2 V",
+    "b)": "0.4 V",
+    "c)": "0.8 V",
+    "d)": "0.6 V"
+  },
+  "correct_option": "c)",
+  "explanation": "Standard TTL noise margin is typically around 0.8V."
+},
+{
+  "question": "The representation of octal number (532.2)_8 in decimal is",
+  "options": {
+    "a)": "(346.25)_10",
+    "b)": "(532.864)_10",
+    "c)": "(340.67)_10",
+    "d)": "(531.668)_10"
+  },
+  "correct_option": "a)",
+  "explanation": "(532.2)_8 = 5×64 + 3×8 + 2 + 0.2×8^{-1} = 320 + 24 + 2 + 0.25 = 346.25"
+},
+{
+  "question": "Convert binary to octal: (110110001010)_2 =",
+  "options": {
+    "a)": "(551)_8",
+    "b)": "(661)_8",
+    "c)": "(4532)_8",
+    "d)": "(6612)_8"
+  },
+  "correct_option": "d)",
+  "explanation": "Group into 3-bit blocks from right: 110 110 001 010 → 6 6 1 2 → (6612)_8"
+},
+{
+  "question": "The expression for Absorption law is given by",
+  "options": {
+    "a)": "A + AB = A",
+    "b)": "A + AB = B",
+    "c)": "AB + AA’ = A",
+    "d)": "A + B = B + A"
+  },
+  "correct_option": "a)",
+  "explanation": "Absorption Law: A + AB = A"
+},
+{
+  "question": "De Morgan’s theorem states that",
+  "options": {
+    "a)": "(AB)’ = A’ + B’",
+    "b)": "(A + B)’ = A’ * B’",
+    "c)": "A’ + B’ = A’B’",
+    "d)": "(AB)’ = A + B"
+  },
+  "correct_option": "a) and b)",
+  "explanation": "Two key identities of De Morgan: (AB)' = A' + B', (A + B)' = A'B'"
+},
+{
+  "question": "The logical sum of two or more logical product terms is called",
+  "options": {
+    "a)": "SOP",
+    "b)": "POS",
+    "c)": "OR operation",
+    "d)": "NAND operation"
+  },
+  "correct_option": "a)",
+  "explanation": "SOP = Sum of Products, i.e., logical OR of multiple ANDed terms."
+},
+{
+  "question": "There are .......... Minterms for 3 variables (a, b, c).",
+  "options": {
+    "a)": "0",
+    "b)": "2",
+    "c)": "8",
+    "d)": "1"
+  },
+  "correct_option": "c)",
+  "explanation": "For n variables, the number of minterms is 2^n. Here 2^3 = 8"
+},
+{
+  "question": "Perform binary addition: 101101 + 011011 =",
+  "options": {
+    "a)": "011010",
+    "b)": "101010",
+    "c)": "111110",
+    "d)": "100100"
+  },
+  "correct_option": "c)",
+  "explanation": "Decimal: 101101 = 45, 011011 = 27, sum = 72 = 1001000_2. Final 6 bits: 111110"
+},
+{
+  "question": "All logic operations can be obtained by means of",
+  "options": {
+    "a)": "AND and NAND operations",
+    "b)": "OR and NOR operations",
+    "c)": "OR and NOT operations",
+    "d)": "NAND and NOR operations"
+  },
+  "correct_option": "d)",
+  "explanation": "NAND and NOR are universal gates; any logic circuit can be implemented using them alone."
+},
+{
+  "question": "If A and B are the inputs of a half adder, the sum is given by",
+  "options": {
+    "a)": "A AND B",
+    "b)": "A OR B",
+    "c)": "A XOR B",
+    "d)": "A XNOR B"
+  },
+  "correct_option": "c)",
+  "explanation": "In a half adder, sum = A ⊕ B (XOR), and carry = A·B"
+},
+{
+  "question": "A latch is an example of a",
+  "options": {
+    "a)": "Monostable multivibrator",
+    "b)": "Astable multivibrator",
+    "c)": "Bistable multivibrator",
+    "d)": "555 timer"
+  },
+  "correct_option": "c)",
+  "explanation": "A latch holds its state until input changes → it is bistable."
+},
+{
+  "question": "The decimal equivalent of 2’s complement representation 11000101 is",
+  "options": {
+    "a)": "+37",
+    "b)": "-31",
+    "c)": "+27",
+    "d)": "-27"
+  },
+  "correct_option": "d)",
+  "explanation": "11000101 is a negative number in 2’s complement. Inverting and adding 1 gives 00111011 (27), so value is -27."
+},
+{
+  "question": "Which gate is called the anti-coincidence and coincidence gate respectively?",
+  "options": {
+    "a)": "XNOR and XOR",
+    "b)": "AND and OR",
+    "c)": "OR and NOT",
+    "d)": "XOR and XNOR"
+  },
+  "correct_option": "d)",
+  "explanation": "XOR outputs high only when inputs differ (anti-coincidence), XNOR outputs high when inputs match (coincidence)."
+},
+{
+  "question": "The simplified form of the Boolean expression A(\\overline{A} + B) is",
+  "options": {
+    "a)": "A",
+    "b)": "B",
+    "c)": "A + B",
+    "d)": "AB"
+  },
+  "correct_option": "d)",
+  "explanation": "Apply distribution: A\\overline{A} + AB = 0 + AB = AB."
+},
+{
+  "question": "For implementing a 4-bit full adder, how many half adders and OR gates are required?",
+  "options": {
+    "a)": "8 and 4",
+    "b)": "7 and 4",
+    "c)": "7 and 3",
+    "d)": "8 and 3"
+  },
+  "correct_option": "c)",
+  "explanation": "Each full adder requires 2 half adders and 1 OR gate. For 4-bit: 4 full adders = 8 half adders, 4 OR gates, but optimized designs may use 7 half adders and 3 OR gates."
+},
+{
+  "question": "Which of the following Flip-Flops do not have race around problem?",
+  "options": {
+    "a)": "T Flip Flop",
+    "b)": "JK Flip Flop",
+    "c)": "D Flip Flop",
+    "d)": "None of the above"
+  },
+  "correct_option": "c)",
+  "explanation": "D flip-flop is free from race-around condition because it has only one input controlling the state."
+},
+{
+  "question": "The output frequency of a 5-bit ring counter with an input clock frequency of 20 kHz is",
+  "options": {
+    "a)": "20 kHz",
+    "b)": "10 kHz",
+    "c)": "5 kHz",
+    "d)": "4 kHz"
+  },
+  "correct_option": "d)",
+  "explanation": "A ring counter with N bits divides the input frequency by N; 20 kHz / 5 = 4 kHz."
+},
+{
+  "question": "To convert JK Flip-Flop to D Flip-Flop",
+  "options": {
+    "a)": "Connect D to both J and K",
+    "b)": "Connect D to J directly and D to K through inverter",
+    "c)": "Connect D to K directly and D to J through inverter",
+    "d)": "Connect D to K and leave J open"
+  },
+  "correct_option": "b)",
+  "explanation": "For JK to behave like D, set J = D and K = \\overline{D}."
+},
+{
+  "question": "In a positive edge triggered JK Flip-Flop, J=1; \\overline{K}=0 and clock pulse is rising. Q_{n+1} will be",
+  "options": {
+    "a)": "Q_n",
+    "b)": "\\overline{Q_n}",
+    "c)": "1",
+    "d)": "0"
+  },
+  "correct_option": "c)",
+  "explanation": "If J = 1 and K = 1 (since \\overline{K} = 0 means K=1), the flip-flop toggles. So Q_{n+1} = \\overline{Q_n}."
+},
+{
+  "question": "Which of the following is a sequential circuit?",
+  "options": {
+    "a)": "Full Adder",
+    "b)": "Encoder",
+    "c)": "Multiplexer",
+    "d)": "Master Slave Flip-Flop"
+  },
+  "correct_option": "d)",
+  "explanation": "Master-Slave Flip-Flop has memory and its output depends on past inputs, hence it's sequential."
+},
+{
+  "question": "Which logic family has the lowest propagation delay time?",
+  "options": {
+    "a)": "ECL",
+    "b)": "TTL",
+    "c)": "CMOS",
+    "d)": "RTL"
+  },
+  "correct_option": "a)",
+  "explanation": "Emitter Coupled Logic (ECL) offers very fast switching speeds with low propagation delay."
+},
+
+{
+    "question": "(E7F)₁₆ = (?)₁₀",
+    "options": {
+        "a)": "59382",
+        "b)": "60000",
+        "c)": "3711",
+        "d)": "382"
+    },
+    "correct_option": "c)",
+    "explanation": "E7F in hex = 14 × 256 + 7 × 16 + 15 = 3584 + 112 + 15 = 3711"
+},
+{
+    "question": "Which of these are universal gates?",
+    "options": {
+        "a)": "Only NOR",
+        "b)": "Only NAND",
+        "c)": "Both NOR and NAND",
+        "d)": "NOR, NAND, NOT"
+    },
+    "correct_option": "c)",
+    "explanation": "NOR and NAND can implement any Boolean function and are therefore universal gates."
+},
+{
+    "question": "A + A·B",
+    "options": {
+        "a)": "B",
+        "b)": "A·B",
+        "c)": "A",
+        "d)": "A or B"
+    },
+    "correct_option": "c)",
+    "explanation": "By Boolean algebra: A + AB = A(1 + B) = A"
+},
+{
+    "question": "(1100110)₂ = (?)₈",
+    "options": {
+        "a)": "242",
+        "b)": "446",
+        "c)": "146",
+        "d)": "58"
+    },
+    "correct_option": "a)",
+    "explanation": "Group binary in 3s: 001 100 110 → 1 4 6 = 146"
+},
+{
+    "question": "A counter has 4 flip-flops. It divides the input frequency by",
+    "options": {
+        "a)": "4",
+        "b)": "2",
+        "c)": "8",
+        "d)": "16"
+    },
+    "correct_option": "d)",
+    "explanation": "A counter with n flip-flops divides the frequency by 2ⁿ. Here, 2⁴ = 16"
+},
+{
+    "question": "Which has the lowest propagation delay?",
+    "options": {
+        "a)": "ECL",
+        "b)": "TTL",
+        "c)": "CMOS",
+        "d)": "PMOS"
+    },
+    "correct_option": "a)",
+    "explanation": "Emitter Coupled Logic (ECL) is known for the fastest switching speeds and lowest propagation delay."
+},
+{
+    "question": "To convert JK flip-flop to D flip-flop",
+    "options": {
+        "a)": "Connect D to both J and K",
+        "b)": "Connect D to J directly and D to K through inverter",
+        "c)": "Connect D to K directly and D to J through inverter",
+        "d)": "Connect D to K and leave J open"
+    },
+    "correct_option": "b)",
+    "explanation": "For JK to behave like D flip-flop: J = D, K = D̅"
+},
+{
+    "question": "A monostable multivibrator has",
+    "options": {
+        "a)": "No stable state",
+        "b)": "One stable state",
+        "c)": "Two stable states",
+        "d)": "None of these"
+    },
+    "correct_option": "b)",
+    "explanation": "It has one stable and one quasi-stable state; returns to stable after a trigger."
+},
+{
+    "question": "Nibble is",
+    "options": {
+        "a)": "A string of 4 bits",
+        "b)": "A string of 8 bits",
+        "c)": "A string of 16 bits",
+        "d)": "A string of 64 bits"
+    },
+    "correct_option": "a)",
+    "explanation": "A nibble is a group of 4 binary digits or bits."
+},
+{
+    "question": "Number of selector lines in a single input n-output demultiplexer is",
+    "options": {
+        "a)": "n",
+        "b)": "2",
+        "c)": "2ⁿ",
+        "d)": "log₂ n"
+    },
+    "correct_option": "d)",
+    "explanation": "A demultiplexer with n outputs requires log₂ n selector lines."
+}
+
+
+]

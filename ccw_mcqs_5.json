@@ -1,0 +1,663 @@
+[
+{
+  "question": "The number of bits per sample in PCM system is increased from 4 to 6, then the improvement in signal to quantization ratio will be",
+  "options": {
+    "a)": "3dB",
+    "b)": "12dB",
+    "c)": "2dB",
+    "d)": "No change"
+  },
+  "correct_option": "b)",
+  "explanation": "Each extra bit improves SNR by ≈ 6 dB. Increase from 4 to 6 bits → 2 × 6 = 12 dB improvement."
+},
+{
+  "question": "For QAM, both ------ of a carrier signal may vary",
+  "options": {
+    "a)": "Frequency and Amplitude",
+    "b)": "Phase and Amplitude",
+    "c)": "Frequency and Phase",
+    "d)": "None of the above"
+  },
+  "correct_option": "b)",
+  "explanation": "Quadrature Amplitude Modulation (QAM) varies both amplitude and phase of the carrier."
+},
+{
+  "question": "Which of the following probability density functions is applicable to discrete Random Variables?",
+  "options": {
+    "a)": "Gaussian Distribution",
+    "b)": "Poisson Distribution",
+    "c)": "Rayleigh Distribution",
+    "d)": "Exponential Distribution"
+  },
+  "correct_option": "b)",
+  "explanation": "Poisson distribution applies to discrete random variables, like event counts."
+},
+{
+  "question": "A 1000kHz carrier is simultaneously amplitude modulated by 300Hz and 2kHz audio signal. Which of the following frequencies will not be present in the output?",
+  "options": {
+    "a)": "998kHz",
+    "b)": "999.7kHz",
+    "c)": "1000.3kHz",
+    "d)": "700kHz"
+  },
+  "correct_option": "d)",
+  "explanation": "AM generates sidebands at fc ± fm, so 700 kHz is unrelated and not present."
+},
+{
+  "question": "The bandwidth for transmission in pulse code modulation is",
+  "options": {
+    "a)": "Higher than DPCM",
+    "b)": "Lower than DPCM",
+    "c)": "Equal to DPCM",
+    "d)": "None of these"
+  },
+  "correct_option": "a)",
+  "explanation": "PCM requires higher bandwidth than DPCM because DPCM transmits difference values with fewer bits."
+},
+{
+  "question": "A broadcast AM radio transmitter radiates 140 kW when modulation percentage is 75%. Find the carrier power.",
+  "options": {
+    "a)": "120.45kW",
+    "b)": "142.26kW",
+    "c)": "109.26kW",
+    "d)": "172.82kW"
+  },
+  "correct_option": "a)",
+  "explanation": "PT = Pc (1 + m²/2) → 140 = Pc (1 + 0.75²/2) → Pc = 120.45 kW."
+},
+{
+  "question": "Maximum deviation in FM = 120 kHz, modulating frequency = 20 kHz. Bandwidth (Carson’s Rule)?",
+  "options": {
+    "a)": "120kHz",
+    "b)": "240kHz",
+    "c)": "280kHz",
+    "d)": "320kHz"
+  },
+  "correct_option": "c)",
+  "explanation": "Carson's rule: BW = 2(Δf + fm) = 2(120 + 20) = 280 kHz."
+},
+{
+  "question": "In a communication system, signal power = 13dB, noise power = -1 dB. Find SNR.",
+  "options": {
+    "a)": "14 dB",
+    "b)": "-13dB",
+    "c)": "12 dB",
+    "d)": "None of these"
+  },
+  "correct_option": "a)",
+  "explanation": "SNR (dB) = Signal (dB) - Noise (dB) = 13 - (-1) = 14 dB."
+},
+{
+  "question": "Boosting of higher frequency at the transmitter is done by using",
+  "options": {
+    "a)": "De-emphasis",
+    "b)": "AGC circuit",
+    "c)": "Pre-emphasis",
+    "d)": "Armstrong method"
+  },
+  "correct_option": "c)",
+  "explanation": "Pre-emphasis improves SNR by amplifying high-frequency components before transmission."
+},
+{
+  "question": "In FM modulation, when the modulation index increases, the transmitted power?",
+  "options": {
+    "a)": "Half",
+    "b)": "Decreased",
+    "c)": "Doubled",
+    "d)": "Unchanged"
+  },
+  "correct_option": "d)",
+  "explanation": "In FM, total transmitted power remains constant with modulation index. Only spectral distribution changes."
+},
+
+{
+  "question": "The capacity of the channel is the",
+  "options": {
+    "a)": "Band width required for information",
+    "b)": "Maximum rate of information transmission",
+    "c)": "Number of digits used in coding",
+    "d)": "Volume of information it can take"
+  },
+  "correct_option": "b)",
+  "explanation": "Channel capacity is defined as the maximum rate of information transmission over a channel without error."
+},
+{
+  "question": "Eye diagram gives an idea of ............",
+  "options": {
+    "a)": "Modulation scheme",
+    "b)": "CLOCK jitter",
+    "c)": "SNR",
+    "d)": "All the mentioned"
+  },
+  "correct_option": "d)",
+  "explanation": "Eye diagrams visually assess timing jitter, SNR, ISI, and modulation quality."
+},
+{
+  "question": "In duobinary signalling method, for M-ary transmission, the number of output obtained is",
+  "options": {
+    "a)": "2M",
+    "b)": "2M-1",
+    "c)": "2M+1",
+    "d)": "M-1"
+  },
+  "correct_option": "c)",
+  "explanation": "Duobinary signaling produces 2M+1 levels due to ISI used intentionally."
+},
+{
+  "question": "A speech signal, band-limited to 8 kHz with peak-to-peak voltage between ±20 V, is sampled at Nyquist rate, and bits 0 and 1 are transmitted using bipolar pulses. Find the minimum bandwidth for distortion-free transmission in kHz?",
+  "options": {
+    "a)": "64 KHz",
+    "b)": "32 KHz",
+    "c)": "16 KHz",
+    "d)": "64 MHz"
+  },
+  "correct_option": "a)",
+  "explanation": "Sampling rate = 2 × 8 = 16 kHz; assuming 4 bits/sample, bit rate = 16 × 4 = 64 kbps. Bipolar NRZ requires BW = bit rate/2 → minimum BW = 64 kHz."
+},
+{
+  "question": "If noise figure of a receiver is 1.8 at 20° C, find its equivalent noise temperature?",
+  "options": {
+    "a)": "184.6 K",
+    "b)": "474.9 K",
+    "c)": "200.3 K",
+    "d)": "234.4 K"
+  },
+  "correct_option": "d)",
+  "explanation": "Te = (F - 1)T0 = (1.8 - 1) × 293 = 0.8 × 293 = 234.4 K. (0 °C = 273 K)"
+},
+{
+  "question": "If the two signals modulate the same carrier with modulation depths of 0.4 and 0.8, find the resulting modulation signal?",
+  "options": {
+    "a)": "0.89",
+    "b)": "0.98",
+    "c)": "0.80",
+    "d)": "1.2"
+  },
+  "correct_option": "a)",
+  "explanation": "Resultant modulation index, μ_total = √(0.4² + 0.8²) = √0.80 ≈ 0.894 (closest: 0.89)."
+},
+{
+  "question": "In FM modulation, when the modulation index increases, the transmitted power?",
+  "options": {
+    "a)": "Half",
+    "b)": "Decreased",
+    "c)": "Doubled",
+    "d)": "Unchanged"
+  },
+  "correct_option": "d)",
+  "explanation": "In FM, total transmitted power remains constant regardless of modulation index."
+},
+{
+  "question": "Which of the given modulator is an indirect way of generating FM?",
+  "options": {
+    "a)": "Inductance FET modulator",
+    "b)": "Armstrong modulator",
+    "c)": "Reactance Tube modulator",
+    "d)": "Zener diode modulator"
+  },
+  "correct_option": "b)",
+  "explanation": "Armstrong method generates FM indirectly by using phase modulation of a carrier."
+},
+{
+  "question": "If number of bits per sample in a PCM system is increased from n to n+1, the improvement in signal to quantization noise ratio will be",
+  "options": {
+    "a)": "2n dB",
+    "b)": "3 dB",
+    "c)": "6 dB",
+    "d)": "2^{n+1} dB"
+  },
+  "correct_option": "c)",
+  "explanation": "Each bit increases SNR by approximately 6 dB."
+},
+{
+  "question": "A balanced modulator is used in the generation of which of the following signal?",
+  "options": {
+    "a)": "FM Signal",
+    "b)": "DSB-SC Signal",
+    "c)": "AM Signal",
+    "d)": "SSB-SC Signal"
+  },
+  "correct_option": "b)",
+  "explanation": "Balanced modulator suppresses carrier, producing Double Sideband Suppressed Carrier (DSB-SC) signal."
+},
+{
+  "question": "Quantizing noise occurs in",
+  "options": {
+    "a)": "TDM",
+    "b)": "FDM",
+    "c)": "PCM",
+    "d)": "PWM"
+  },
+  "correct_option": "c)",
+  "explanation": "Quantization noise arises during analog-to-digital conversion in Pulse Code Modulation (PCM)."
+},
+{
+  "question": "Companding is used to",
+  "options": {
+    "a)": "Overcome aliasing",
+    "b)": "Overcome degradation of SNR",
+    "c)": "Overcome quantization error",
+    "d)": "Increase data rate"
+  },
+  "correct_option": "c)",
+  "explanation": "Companding compresses the signal before quantization and expands it after, reducing quantization error."
+},
+{
+  "question": "In a communication system, the signal power is 13 dB and noise power is -1 dB. The SNR will be",
+  "options": {
+    "a)": "14 dB",
+    "b)": "-13 dB",
+    "c)": "12 dB",
+    "d)": "None of these"
+  },
+  "correct_option": "a)",
+  "explanation": "SNR (in dB) = Signal Power - Noise Power = 13 - (-1) = 14 dB."
+},
+{
+  "question": "The spectral density of white noise is",
+  "options": {
+    "a)": "Exponential",
+    "b)": "Uniform",
+    "c)": "Poisson",
+    "d)": "Gaussian"
+  },
+  "correct_option": "b)",
+  "explanation": "White noise has a constant power spectral density across all frequencies — uniform distribution."
+},
+{
+  "question": "Noise figure for an ideal receiver is",
+  "options": {
+    "a)": "0",
+    "b)": "0.1",
+    "c)": "1",
+    "d)": "10"
+  },
+  "correct_option": "c)",
+  "explanation": "For an ideal receiver, noise figure F = SNR_in / SNR_out = 1."
+},
+{
+  "question": "Boosting of higher frequency at the transmitter is done by using",
+  "options": {
+    "a)": "De-emphasis",
+    "b)": "AGC circuit",
+    "c)": "Pre-emphasis",
+    "d)": "Armstrong method"
+  },
+  "correct_option": "c)",
+  "explanation": "Pre-emphasis boosts high-frequency components before transmission to improve SNR."
+},
+{
+  "question": "Which of the following pulse modulation is analog?",
+  "options": {
+    "a)": "PCM",
+    "b)": "Differential PCM",
+    "c)": "PWM",
+    "d)": "Delta Modulation"
+  },
+  "correct_option": "c)",
+  "explanation": "PWM (Pulse Width Modulation) is an analog pulse modulation scheme; PCM and DPCM are digital."
+},
+{
+  "question": "The main advantage of super heterodyne is",
+  "options": {
+    "a)": "Simple circuit",
+    "b)": "Better tracking",
+    "c)": "Improvement in selectivity and sensitivity",
+    "d)": "Better alignment"
+  },
+  "correct_option": "c)",
+  "explanation": "Superheterodyne receivers improve selectivity and sensitivity by converting all signals to a fixed intermediate frequency (IF)."
+},
+{
+  "question": "The channel capacity is measured in terms of:",
+  "options": {
+    "a)": "Bit per channel",
+    "b)": "Number of input channels connected",
+    "c)": "Call per channel",
+    "d)": "bits"
+  },
+  "correct_option": "d)",
+  "explanation": "Channel capacity is expressed in bits per second, indicating data rate."
+},
+{
+  "question": "In a PCM system each quantization level is encoded into 7 bits. The signal-to-quantization noise ratio is equal to",
+  "options": {
+    "a)": "25.8 dB",
+    "b)": "34.6 dB",
+    "c)": "43.9 dB",
+    "d)": "49.8 dB"
+  },
+  "correct_option": "c)",
+  "explanation": "SQNR_dB = 6.02n + 1.76 = 6.02 × 7 + 1.76 = 43.9 dB."
+},
+{
+  "question": "The value of a resistor creating thermal noise is doubled. The noise power generator is therefore….",
+  "options": {
+    "a)": "Halved",
+    "b)": "Quadrupled",
+    "c)": "Doubled",
+    "d)": "Unchanged"
+  },
+  "correct_option": "c)",
+  "explanation": "Thermal noise power is proportional to resistance; doubling the resistor value doubles the noise power."
+},
+{
+  "question": "Which of the following is the most reliable measurement for comparing amplifier noise characteristics?",
+  "options": {
+    "a)": "Signal-to-Noise ratio",
+    "b)": "Noise factor",
+    "c)": "Shot noise",
+    "d)": "Thermal noise agitation"
+  },
+  "correct_option": "b)",
+  "explanation": "The noise factor is a standardized measure for comparing how much noise an amplifier adds, independent of input signal levels."
+},
+{
+  "question": "If E denotes the expectation, the variance of a random variable X is denoted as?",
+  "options": {
+    "a)": "(E(X))^2",
+    "b)": "E(X^2) - (E(X))^2",
+    "c)": "E(X^2)",
+    "d)": "2E(X)"
+  },
+  "correct_option": "b)",
+  "explanation": "Variance is defined as the expected value of the squared deviation from the mean: Var(X) = E(X^2) - (E(X))^2."
+},
+{
+  "question": "Which of the following mentioned standard Probability Density Functions is applicable to discrete Random Variables?",
+  "options": {
+    "a)": "Gaussian Distribution",
+    "b)": "Poisson Distribution",
+    "c)": "Rayleigh Distribution",
+    "d)": "Exponential Distribution"
+  },
+  "correct_option": "b)",
+  "explanation": "The Poisson distribution is a discrete probability distribution used to model the number of events in fixed intervals of time or space."
+},
+{
+  "question": "Non-uniform quantizer __ distortion.",
+  "options": {
+    "a)": "Increases",
+    "b)": "Decreases",
+    "c)": "Does not affect",
+    "d)": "None of the mentioned"
+  },
+  "correct_option": "b)",
+  "explanation": "Non-uniform quantizers reduce quantization error for signals with non-uniform distributions, hence reducing distortion."
+},
+{
+  "question": "The spectral density of white noise is…",
+  "options": {
+    "a)": "Exponential",
+    "b)": "Uniform",
+    "c)": "Poisson",
+    "d)": "Gaussian"
+  },
+  "correct_option": "b)",
+  "explanation": "White noise has a constant (uniform) power spectral density over all frequencies."
+},
+{
+  "question": "The term heterodyning refers to……",
+  "options": {
+    "a)": "Frequency conversion",
+    "b)": "Frequency mixing",
+    "c)": "Frequency conversion and mixing",
+    "d)": "None of the mentioned"
+  },
+  "correct_option": "c)",
+  "explanation": "Heterodyning is the process of mixing two signals to produce new frequencies (sum and difference), used in frequency conversion."
+},
+{
+  "question": "Roll-off factor is the fraction of…",
+  "options": {
+    "a)": "Excess bandwidth and absolute bandwidth",
+    "b)": "Excess bandwidth and minimum Nyquist bandwidth",
+    "c)": "Absolute bandwidth and minimum Nyquist bandwidth",
+    "d)": "None of the mentioned"
+  },
+  "correct_option": "b)",
+  "explanation": "The roll-off factor defines the ratio of excess bandwidth to the minimum Nyquist bandwidth in bandlimited systems."
+},
+{
+  "question": "The detector that minimizes the error probability is called as…..",
+  "options": {
+    "a)": "Maximum likelihood detector",
+    "b)": "Minimum likelihood detector",
+    "c)": "Maximum & Minimum likelihood detector",
+    "d)": "None of the mentioned"
+  },
+  "correct_option": "a)",
+  "explanation": "The maximum likelihood detector chooses the most probable transmitted signal, minimizing the probability of error."
+},
+{
+  "question": "Wavelength and antenna size are related as…",
+  "options": {
+    "a)": "λ/2",
+    "b)": "λ/4",
+    "c)": "2λ",
+    "d)": "4λ"
+  },
+  "correct_option": "b)",
+  "explanation": "A common antenna size, especially for dipole antennas, is quarter the wavelength, i.e., λ/4."
+},
+{
+    "question": "Sinusoidal AM with envelope max = 3V, min = 1V. Modulation index (μ in %) is",
+    "options": {
+        "a)": "10",
+        "b)": "25",
+        "c)": "50",
+        "d)": "100"
+    },
+    "correct_option": "c)",
+    "explanation": "μ = (V_max - V_min) / (V_max + V_min) = (3 - 1)/(3 + 1) = 0.5 ⇒ 50%"
+},
+{
+    "question": "A superheterodyne radio receiver with an intermediate frequency of 455 kHz, and local oscillator tuned to 1200 kHz. The image frequency is",
+    "options": {
+        "a)": "765",
+        "b)": "1655",
+        "c)": "2100",
+        "d)": "900"
+    },
+    "correct_option": "b)",
+    "explanation": "Image frequency = LO + IF = 1200 + 455 = 1655 kHz."
+},
+{
+    "question": "FM modulation pre-emphasis is done for",
+    "options": {
+        "a)": "High frequency components",
+        "b)": "Low frequency components",
+        "c)": "Middle components",
+        "d)": "Both a and b"
+    },
+    "correct_option": "a)",
+    "explanation": "Pre-emphasis improves SNR for high-frequency signals in FM."
+},
+{
+    "question": "Number of bits per sample in PCM increased from 5 to 6. Improvement in SNR is",
+    "options": {
+        "a)": "3 dB",
+        "b)": "6 dB",
+        "c)": "2 dB",
+        "d)": "No change"
+    },
+    "correct_option": "b)",
+    "explanation": "Each bit increases SNR by approximately 6 dB in PCM."
+},
+{
+    "question": "In delta modulation, slope overload distortion is reduced by",
+    "options": {
+        "a)": "Decreasing step size",
+        "b)": "Decreasing sampling rate",
+        "c)": "Increasing step size",
+        "d)": "Increasing sampling rate"
+    },
+    "correct_option": "c)",
+    "explanation": "Increasing step size allows tracking of rapidly changing signals."
+},
+{
+    "question": "In a digital communication system, shaping is done for",
+    "options": {
+        "a)": "Controlling Inter Symbol Interference",
+        "b)": "Symbol bandwidth of transmission",
+        "c)": "After coding and modulation",
+        "d)": "All of the above"
+    },
+    "correct_option": "d)",
+    "explanation": "Pulse shaping helps manage bandwidth and reduces ISI."
+},
+{
+    "question": "Zero-forced equalizers are used for",
+    "options": {
+        "a)": "Reducing ISI to zero",
+        "b)": "Reduce the Quantization error",
+        "c)": "Reduce the bandwidth",
+        "d)": "All of the above"
+    },
+    "correct_option": "a)",
+    "explanation": "Zero forcing equalizers eliminate Inter Symbol Interference (ISI) completely under ideal conditions."
+},
+{
+    "question": "Characteristics of Matched filter are",
+    "options": {
+        "a)": "Matched filter is used to maximize Signal to noise ratio even for non-Gaussian noise",
+        "b)": "It gives the output as signal energy in the absence of noise",
+        "c)": "They are used for signal detection",
+        "d)": "All of the above"
+    },
+    "correct_option": "d)",
+    "explanation": "Matched filters are optimal linear filters for maximizing SNR in signal detection applications."
+},
+{
+    "question": "In QAM, both ........... of a carrier frequency vary",
+    "options": {
+        "a)": "Frequency and Amplitude",
+        "b)": "Phase and Amplitude",
+        "c)": "Frequency and Phase",
+        "d)": "None of the above"
+    },
+    "correct_option": "b)",
+    "explanation": "Quadrature Amplitude Modulation (QAM) varies both amplitude and phase of the carrier."
+},
+{
+    "question": "The detector that minimizes the error probability is called as",
+    "options": {
+        "a)": "Maximum likelihood detector",
+        "b)": "Minimum likelihood detector",
+        "c)": "Maximum & Minimum likelihood detectors",
+        "d)": "Synchronous detector"
+    },
+    "correct_option": "a)",
+    "explanation": "Maximum Likelihood (ML) detectors minimize the probability of symbol error in digital communication systems."
+},
+{
+    "question": "For AM receivers, the standard IF frequency is",
+    "options": {
+        "a)": "106kHz",
+        "b)": "455kHz",
+        "c)": "10.7MHz",
+        "d)": "1.07MHz"
+    },
+    "correct_option": "b)",
+    "explanation": "Standard Intermediate Frequency (IF) for AM is 455 kHz; 10.7 MHz is for FM."
+},
+{
+    "question": "A 1000kHz carrier is simultaneously amplitude modulated by 300Hz and 2kHz audio signal. Which of the following frequencies will not be present in the output?",
+    "options": {
+        "a)": "998kHz",
+        "b)": "999.7kHz",
+        "c)": "1000.3kHz",
+        "d)": "700kHz"
+    },
+    "correct_option": "d)",
+    "explanation": "700kHz is not part of the AM sidebands; valid frequencies are 997kHz, 998kHz, 999.7kHz, etc."
+},
+{
+    "question": "A sinusoidal signal of 2kW peak is amplitude modulated to give 20% modulation. The peak value of each side band is",
+    "options": {
+        "a)": "400W",
+        "b)": "200W",
+        "c)": "100W",
+        "d)": "800W"
+    },
+    "correct_option": "a)",
+    "explanation": "Power in each sideband is P_c · (m^2/4), with carrier power = 2kW and m = 0.2."
+},
+{
+    "question": "In frequency modulation broadcast, the maximum deviation is 80 kHz, and the maximum modulating frequency is 20 kHz. In reference to Carson's rule, find the maximum required bandwidth",
+    "options": {
+        "a)": "300kHz",
+        "b)": "200kHz",
+        "c)": "500kHz",
+        "d)": "600kHz"
+    },
+    "correct_option": "b)",
+    "explanation": "Carson’s Rule: BW = 2(Δf + f_m) = 2(80+20) = 200 kHz."
+},
+{
+    "question": "If the two signals modulate the same carrier with different modulation depths of 0.4 and 0.8, find the modulation index of the resulting modulation signal?",
+    "options": {
+        "a)": "0.96",
+        "b)": "0.89",
+        "c)": "0.69",
+        "d)": "0.64"
+    },
+    "correct_option": "b)",
+    "explanation": "Resultant modulation index m = √(0.4² + 0.8²) = √0.8 ≈ 0.89."
+},
+{
+    "question": "Without any filtering, a broadcast station at 1800 kHz is heard together with another station at 2800 kHz on a superheterodyne receiver. Find the value of employed IF?",
+    "options": {
+        "a)": "200Hz",
+        "b)": "400Hz",
+        "c)": "600Hz",
+        "d)": "500kHz"
+    },
+    "correct_option": "d)",
+    "explanation": "Image frequency interference suggests IF = |2800 - 1800| = 1000 / 2 = 500 kHz."
+},
+{
+    "question": "In a PCM system each quantization level is encoded into 7 bits. The signal-to-quantization noise ratio is equal to",
+    "options": {
+        "a)": "25.8dB",
+        "b)": "34.6dB",
+        "c)": "43.9dB",
+        "d)": "49.8dB"
+    },
+    "correct_option": "c)",
+    "explanation": "SQNR (dB) = 6.02 × n + 1.76 = 6.02 × 7 + 1.76 = 43.9 dB."
+},
+{
+    "question": "Delta modulation suffers from",
+    "options": {
+        "a)": "Slope Overload error",
+        "b)": "Granular Noise",
+        "c)": "Both a and b",
+        "d)": "None of these"
+    },
+    "correct_option": "c)",
+    "explanation": "Delta modulation is prone to both slope overload (for fast signals) and granular noise (for low variation signals)."
+},
+{
+    "question": "The bandwidth for transmission in pulse code modulation is",
+    "options": {
+        "a)": "Higher than DPCM",
+        "b)": "Lower than DPCM",
+        "c)": "Equal to DPCM",
+        "d)": "None of these"
+    },
+    "correct_option": "a)",
+    "explanation": "PCM uses more bits per sample than DPCM, hence requires more bandwidth."
+},
+{
+    "question": "For a 10-bit PCM system, the signal-to-quantization noise ratio is 62 dB. If the number of bits is increased by 2, then the signal-to-quantization noise ratio will",
+    "options": {
+        "a)": "Increased by 6dB",
+        "b)": "Increased by 12dB",
+        "c)": "Increased by 24dB",
+        "d)": "Increased by 26dB"
+    },
+    "correct_option": "b)",
+    "explanation": "SQNR increases by approximately 6 dB per bit; 2 bits → 12 dB increase."
+}
+]

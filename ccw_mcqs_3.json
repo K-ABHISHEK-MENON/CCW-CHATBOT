@@ -1,0 +1,667 @@
+[
+
+{
+  "question": "The input to an op-amp integrating amplifier is a constant voltage. The output will be",
+  "options": {
+    "a)": "A constant voltage",
+    "b)": "A sawtooth wave",
+    "c)": "A ramp",
+    "d)": "ac voltage"
+  },
+  "correct_option": "c)",
+  "explanation": "Constant input produces linearly increasing/decreasing ramp output."
+},
+{
+  "question": "The output impedance of an ideal op-amp is",
+  "options": {
+    "a)": "zero",
+    "b)": "low",
+    "c)": "high",
+    "d)": "infinite"
+  },
+  "correct_option": "a)",
+  "explanation": "An ideal op-amp has zero output impedance to provide maximum load driving capability."
+},
+{
+  "question": "Which of the following circuit is op-amp used in open loop configuration?",
+  "options": {
+    "a)": "Comparator",
+    "b)": "Summing amplifier",
+    "c)": "Integrating amplifier",
+    "d)": "Logarithmic amplifier"
+  },
+  "correct_option": "a)",
+  "explanation": "Comparator uses op-amp without feedback, operating in open loop."
+},
+{
+  "question": "The slew rate for an ideal op-amp is",
+  "options": {
+    "a)": "Very slow",
+    "b)": "slow",
+    "c)": "Finite",
+    "d)": "Infinitely fast"
+  },
+  "correct_option": "d)",
+  "explanation": "Ideal op-amp has infinite slew rate, meaning it can change output instantaneously."
+},
+{
+  "question": "Which is not present in the internal circuit of operational amplifier?",
+  "options": {
+    "a)": "Differential Amplifier",
+    "b)": "Level Shifter",
+    "c)": "Output Driver",
+    "d)": "Clamper"
+  },
+  "correct_option": "d)",
+  "explanation": "Operational amplifiers do not contain clampers internally. Clamper is an external signal conditioning circuit."
+},
+{
+  "question": "The functional diagram of a 555 Timer IC consists of how many comparators?",
+  "options": {
+    "a)": "No Comparators",
+    "b)": "1",
+    "c)": "2",
+    "d)": "3"
+  },
+  "correct_option": "c)",
+  "explanation": "The 555 Timer IC has 2 comparators which control the flip-flop. They compare threshold and trigger voltages with reference levels."
+},
+{
+  "question": "The number of comparator in a 4-bit Flash ADC is",
+  "options": {
+    "a)": "4",
+    "b)": "5",
+    "c)": "15",
+    "d)": "16"
+  },
+  "correct_option": "c)",
+  "explanation": "For an n-bit Flash ADC, number of comparators = $2^n - 1 = 15$. This gives full range of digital outputs."
+},
+{
+  "question": "Find CMRR if $A_d = 40$ dB and $A_c = 2$ dB?",
+  "options": {
+    "a)": "18dB",
+    "b)": "10dB",
+    "c)": "40dB",
+    "d)": "38dB"
+  },
+  "correct_option": "d)",
+  "explanation": "CMRR = $A_d - A_c = 40 - 2 = 38$ dB. However, typically calculated using $CMRR = 20\\log_{10}(A_d/A_c)$."
+},
+{
+  "question": "An instrumentation amplifier uses",
+  "options": {
+    "a)": "1 op-amp",
+    "b)": "2 op-amps",
+    "c)": "3 op-amps",
+    "d)": "4 op-amps"
+  },
+  "correct_option": "c)",
+  "explanation": "Instrumentation amplifiers use 3 op-amps to provide high CMRR and gain. Two are input buffers and one is a difference amplifier."
+},
+{
+  "question": "Find the gain of a Non-inverting amplifier, if $R_f = 100k$, $R_1 = 10k$",
+  "options": {
+    "a)": "10",
+    "b)": "1000",
+    "c)": "11",
+    "d)": "21"
+  },
+  "correct_option": "c)",
+  "explanation": "Gain = $1 + (R_f / R_1) = 1 + (100k / 10k) = 11$."
+},
+
+{
+  "question": "In ideal op-amp, the current through the virtual ground is",
+  "options": {
+    "a)": "1 A",
+    "b)": "10 A",
+    "c)": "Zero",
+    "d)": "Infinity"
+  },
+  "correct_option": "c)",
+  "explanation": "Ideal op-amp has infinite input impedance → no input current."
+},
+{
+  "question": "The frequency compensation is used in op–amp to increase its",
+  "options": {
+    "a)": "Input impedance",
+    "b)": "Output impedance",
+    "c)": "Gain",
+    "d)": "Bandwidth"
+  },
+  "correct_option": "d)",
+  "explanation": "Compensation prevents instability → improves usable bandwidth."
+},
+{
+  "question": "What is the maximum frequency for a sine wave output voltage of 10V peak with an op–amp whose slew rate is 1V/μs",
+  "options": {
+    "a)": "15.92 KHz",
+    "b)": "19.92 KHz",
+    "c)": "25.92 KHz",
+    "d)": "27.36 KHz"
+  },
+  "correct_option": "a)",
+  "explanation": "fₘₐₓ = SR / (2πVₚ) = 1 / (2π × 10) = 15.92 kHz"
+},
+{
+  "question": "For a given op–amp, CMRR = 10⁵ and differential gain = 10⁵, what is the common mode gain of the op–amp?",
+  "options": {
+    "a)": "1",
+    "b)": "10",
+    "c)": "2 × 10⁵",
+    "d)": "1"
+  },
+  "correct_option": "a)",
+  "explanation": "CMRR = A_d / A_cm ⇒ A_cm = 10⁵ / 10⁵ = 1"
+},
+{
+  "question": "In RC integrator circuit using op–amp, the output is taken across .............",
+  "options": {
+    "a)": "Resistor",
+    "b)": "Transistor",
+    "c)": "Capacitor",
+    "d)": "Diode"
+  },
+  "correct_option": "c)",
+  "explanation": "For integration, the capacitor is in feedback path → output across it."
+},
+{
+  "question": "An instrumentation amplifier generally uses the following number of Op-amp",
+  "options": {
+    "a)": "1",
+    "b)": "2",
+    "c)": "3",
+    "d)": "4"
+  },
+  "correct_option": "c)",
+  "explanation": "Typical instrumentation amplifier configuration uses 3 op-amps — 2 for buffering, 1 for differential amplification."
+},
+{
+  "question": "The basic important blocks of IC-555 timer",
+  "options": {
+    "a)": "Voltage source",
+    "b)": "Flip-Flop",
+    "c)": "Resistors",
+    "d)": "Switch"
+  },
+  "correct_option": "b)",
+  "explanation": "IC-555 includes a flip-flop, comparators, resistor divider, discharge transistor."
+},
+{
+  "question": "Which one of the following is a regulated power supply?",
+  "options": {
+    "a)": "IC 555",
+    "b)": "IC 723",
+    "c)": "IC 844",
+    "d)": "IC 3080"
+  },
+  "correct_option": "b)",
+  "explanation": "IC 723 is a voltage regulator IC with adjustable output."
+},
+{
+  "question": "The number of comparators in a 4-bit Flash ADC is",
+  "options": {
+    "a)": "4",
+    "b)": "5",
+    "c)": "15",
+    "d)": "16"
+  },
+  "correct_option": "c)",
+  "explanation": "A 4-bit flash ADC requires 2ⁿ - 1 = 15 comparators."
+},
+{
+  "question": "The resolution of N-bit system DAC converter is",
+  "options": {
+    "a)": "1 / 2ᴺ",
+    "b)": "1 / (2ᴺ - 1)",
+    "c)": "(2ᴺ - 1)",
+    "d)": "2ᴺ"
+  },
+  "correct_option": "a)",
+  "explanation": "DAC resolution is step size = 1 / 2ᴺ."
+},
+
+{
+  "question": "What is CMRR if A_d = 30 dB and A_c = 4 dB?",
+  "options": {
+    "a)": "26 dB",
+    "b)": "28 dB",
+    "c)": "32 dB",
+    "d)": "15 dB"
+  },
+  "correct_option": "a)",
+  "explanation": "CMRR = A_d - A_c = 30 - 4 = 26 dB."
+},
+{
+  "question": "Logarithmic amplifiers are used in ..........",
+  "options": {
+    "a)": "Adders",
+    "b)": "Dividers",
+    "c)": "Multipliers",
+    "d)": "All of the above"
+  },
+  "correct_option": "d)",
+  "explanation": "Log-amps help implement all mentioned operations by converting multiplicative relationships into additive."
+},
+{
+  "question": "What is PSRR value of an ideal Op-amp?",
+  "options": {
+    "a)": "Zero",
+    "b)": "Unity",
+    "c)": "Infinite",
+    "d)": "Unpredictable"
+  },
+  "correct_option": "c)",
+  "explanation": "Ideal Op-amp does not respond to power supply variations → PSRR is infinite."
+},
+{
+  "question": "The rise time of a low-pass RC circuit is given by:",
+  "options": {
+    "a)": "2.2RC",
+    "b)": "30.2RC",
+    "c)": "10RC",
+    "d)": "22RC"
+  },
+  "correct_option": "a)",
+  "explanation": "Rise time (10 to 90) for RC circuit is approximately 2.2RC."
+},
+{
+  "question": "The following configuration is an example of a positive feedback system:",
+  "options": {
+    "a)": "Inverting amplifier",
+    "b)": "Non-inverting amplifier",
+    "c)": "Schmitt Trigger",
+    "d)": "None of these"
+  },
+  "correct_option": "c)",
+  "explanation": "Schmitt Trigger uses positive feedback to create hysteresis and ensure noise immunity."
+},
+{
+  "question": "What is the Time period of a Monostable 555 Multivibrator?",
+  "options": {
+    "a)": "T = 3 RC",
+    "b)": "T = 3.3 RC",
+    "c)": "T = 1.1 RC",
+    "d)": "T = 1.3 RC"
+  },
+  "correct_option": "c)",
+  "explanation": "For Monostable 555, Time period T = 1.1 × R × C."
+},
+{
+  "question": "What is the primary purpose of a phase-locked loop (PLL) in linear integrated circuits?",
+  "options": {
+    "a)": "Voltage amplification",
+    "b)": "Frequency synthesis and synchronization",
+    "c)": "Voltage stabilization",
+    "d)": "None of these"
+  },
+  "correct_option": "b)",
+  "explanation": "PLL is widely used for frequency synthesis, modulation/demodulation, and synchronization."
+},
+{
+  "question": "Which configuration of an operational amplifier provides a voltage gain greater than 1?",
+  "options": {
+    "a)": "Inverting amplifier",
+    "b)": "Non-Inverting amplifier",
+    "c)": "Differential amplifier",
+    "d)": "Voltage follower amplifier"
+  },
+  "correct_option": "b)",
+  "explanation": "Non-inverting amplifier gain = 1 + R_f/R_in > 1."
+},
+{
+  "question": "What is the primary function of a voltage-controlled oscillator (VCO)?",
+  "options": {
+    "a)": "Voltage amplification",
+    "b)": "Frequency modulation",
+    "c)": "Voltage stabilization",
+    "d)": "Digital signal processing"
+  },
+  "correct_option": "b)",
+  "explanation": "VCO generates a frequency that varies based on the input voltage—used in FM."
+},
+{
+  "question": "Find the gain of a Non-inverting amplifier, if V_i = 1V, R_f = 10kΩ, R_i = 1kΩ",
+  "options": {
+    "a)": "10",
+    "b)": "1000",
+    "c)": "11",
+    "d)": "Infinity"
+  },
+  "correct_option": "c)",
+  "explanation": "Gain = 1 + R_f/R_i = 1 + 10/1 = 11."
+},
+{
+  "question": "Which of the following electrical characteristics is not exhibited by an ideal op-amp?",
+  "options": {
+    "a)": "Infinite voltage gain",
+    "b)": "Infinite bandwidth",
+    "c)": "Infinite output resistance",
+    "d)": "Infinite slew rate"
+  },
+  "correct_option": "c)",
+  "explanation": "Ideal op-amp has zero output resistance, not infinite."
+},
+{
+  "question": "If output is measured between two collectors of transistors, then the Differential amplifier with two input signal is said to be configured as",
+  "options": {
+    "a)": "Dual Input Balanced Output",
+    "b)": "Dual Input Unbalanced Output",
+    "c)": "Single Input Balanced Output",
+    "d)": "Dual Input Unbalanced Output"
+  },
+  "correct_option": "a)",
+  "explanation": "When two inputs are applied and output is taken differentially, it's a dual-input balanced-output configuration."
+},
+{
+  "question": "An inverting amplifier with gain 1 has different input voltages: 1.2 V, 3.2 V and 4.2 V. Find the output voltage?",
+  "options": {
+    "a)": "4.2 V",
+    "b)": "8.6 V",
+    "c)": "-4.2 V",
+    "d)": "-8.6 V"
+  },
+  "correct_option": "c)",
+  "explanation": "Inverting amplifier with gain = -1, so Vo = -Vin. For input 4.2 V, output = -4.2 V."
+},
+{
+  "question": "If the gain of a non-inverting averaging amplifier is one, determine the input voltages, if the output voltage is 3 V?",
+  "options": {
+    "a)": "V1 = 6 V, V2 = 3 V and V3 = 2 V",
+    "b)": "V1 = 9 V, V2 = 5 V and V3 = 4 V",
+    "c)": "V1 = 8 V, V2 = 0 and V3 = 1 V",
+    "d)": "V1 = 7 V, V2 = 4 V and V3 = -3 V"
+  },
+  "correct_option": "c)",
+  "explanation": "Averaging amplifier output: Vout = (V1 + V2 + V3)/3 = 3 V ⇒ V1 + V2 + V3 = 9 V. Only option (c) satisfies this."
+},
+{
+  "question": "The temperature of a thermistor increases, when the value of its resistance...",
+  "options": {
+    "a)": "Remains constant",
+    "b)": "Increase",
+    "c)": "Decrease",
+    "d)": "Depends on the heating element"
+  },
+  "correct_option": "c)",
+  "explanation": "A thermistor has a Negative Temperature Coefficient (NTC), so its resistance decreases as temperature increases."
+},
+{
+  "question": "What is Barkhausen criterion for oscillation?",
+  "options": {
+    "a)": "AB > 1",
+    "b)": "AB < 1",
+    "c)": "AB = 1",
+    "d)": "AB ≠ 1"
+  },
+  "correct_option": "c)",
+  "explanation": "Barkhausen criterion: Loop gain |AB| = 1 and total phase shift around the loop = 360° or 0°."
+},
+{
+  "question": "What will be the phase shift of feedback circuit in RC phase shift oscillator?",
+  "options": {
+    "a)": "360° phase shift",
+    "b)": "180° phase shift",
+    "c)": "90° phase shift",
+    "d)": "60° phase shift"
+  },
+  "correct_option": "b)",
+  "explanation": "The RC network provides 180° phase shift, and the amplifier inverts another 180°, making 360° total."
+},
+{
+  "question": "The condition for zero phase shift in Wein bridge oscillator is achieved by...",
+  "options": {
+    "a)": "Connecting feedback to non-inverting input terminal of op-amp",
+    "b)": "Balancing the bridge",
+    "c)": "Applying parallel combination of RC to the feedback network",
+    "d)": "All of the mentioned"
+  },
+  "correct_option": "d)",
+  "explanation": "Wein bridge oscillator provides zero phase shift when the bridge is balanced and RC network is symmetrical."
+},
+{
+  "question": "How do we determine the time period of a monostable 555 multivibrator?",
+  "options": {
+    "a)": "T = 0.33RC",
+    "b)": "T = 1.1RC",
+    "c)": "T = 3RC",
+    "d)": "T = RC"
+  },
+  "correct_option": "b)",
+  "explanation": "The pulse width or time period in a monostable 555 multivibrator is T = 1.1RC."
+},
+{
+  "question": "At which state the phase-locked loop tracks any change in input frequency?",
+  "options": {
+    "a)": "Free running state",
+    "b)": "Capture state",
+    "c)": "Phase locked state",
+    "d)": "All of the mentioned"
+  },
+  "correct_option": "c)",
+  "explanation": "In the phase-locked state, the PLL tracks changes in input frequency continuously."
+},
+{
+    "question": "Open loop gain of an ideal OP-AMP is",
+    "options": {
+        "a)": "Zero",
+        "b)": "Infinity",
+        "c)": "$10^6$",
+        "d)": "1"
+    },
+    "correct_option": "b)",
+    "explanation": "An ideal op-amp has infinite open-loop gain, infinite input impedance, and zero output impedance."
+},
+{
+    "question": "The output of a particular OP-amp increases 12 V in 8 µs. The slew rate is ...",
+    "options": {
+        "a)": "90 V/µs",
+        "b)": "±2 V/µs",
+        "c)": "1.5 V/µs",
+        "d)": "Infinity"
+    },
+    "correct_option": "c)",
+    "explanation": "Slew rate = ΔV / Δt = 12 V / 8 µs = 1.5 V/µs."
+},
+{
+    "question": "For an inverting amplifier $R_f = 10\\,k\\Omega$ and $R_i = 100\\,k\\Omega$. Then closed-loop gain of OP-amp is",
+    "options": {
+        "a)": "-10",
+        "b)": "-11",
+        "c)": "-1",
+        "d)": "Infinity"
+    },
+    "correct_option": "a)",
+    "explanation": "Gain of inverting amplifier is -R_f/R_i = -10k / 100k = -0.1."
+},
+{
+  "question": "Logarithmic amplifiers are used in ..........",
+  "options": {
+    "a)": "Adders",
+    "b)": "Dividers",
+    "c)": "Multipliers",
+    "d)": "All of the above"
+  },
+  "correct_option": "d)",
+  "explanation": "Log-amps help implement all mentioned operations by converting multiplicative relationships into additive."
+},
+{
+    "question": "An OP-amp has an open-loop gain of $10^5$ and an open-loop upper cut-off frequency of 10 Hz. If this OP-amp is connected as an amplifier with a closed-loop gain of 100, the new upper cut-off frequency is",
+    "options": {
+        "a)": "10 Hz",
+        "b)": "100 Hz",
+        "c)": "10 kHz",
+        "d)": "100 kHz"
+    },
+    "correct_option": "c)",
+    "explanation": "Gain-bandwidth product is constant: 10^5 × 10 = 10^6. So new f_c = 10^6 / 100 = 10 kHz."
+},
+{
+    "question": "The functional diagram of a 555 Timer IC consists of ............ comparators.",
+    "options": {
+        "a)": "1",
+        "b)": "2",
+        "c)": "3",
+        "d)": "No Comparators"
+    },
+    "correct_option": "b)",
+    "explanation": "A 555 Timer has 2 comparators which compare voltage levels for timing operations."
+},
+{
+    "question": "Identify the  OP-amp circuit with no input",
+    "options": {
+        "a)": "Precision Rectifier",
+        "b)": "Second order Low Pass filter",
+        "c)": "Precision Integrator",
+        "d)": "Wien Bridge Oscillator"
+    },
+    "correct_option": "d)",
+    "explanation": "The Wien bridge oscillator operates on the principle of positive feedback. The frequency-selective network, consisting of the resistors and capacitors, provides a specific phase shift at a particular frequency. When the feedback signal returns to the input of the op-amp in phase and with sufficient gain, oscillation occurs."
+},
+{
+    "question": "Which of the following is not a component of PLL?",
+    "options": {
+        "a)": "Frequency Multiplexer",
+        "b)": "Phase Detector",
+        "c)": "VCO",
+        "d)": "Low Pass Filter"
+    },
+    "correct_option": "a)",
+    "explanation": "A PLL consists of phase detector, voltage-controlled oscillator, and loop filter—not a frequency multiplexer."
+},
+{
+    "question": "An $n$-bit Analog to Digital converter is required to convert analog input in the range of 0 to 5 V with an accuracy of 10 mV. Then the value of $n$ should be",
+    "options": {
+        "a)": "16",
+        "b)": "10",
+        "c)": "9",
+        "d)": "8"
+    },
+    "correct_option": "c)",
+    "explanation": "Resolution = 5 V / 2^n ≤ 10 mV ⇒ 2^n ≥ 500 ⇒ n ≥ 9."
+},
+{
+    "question": "Find the cut-off frequency for an RC low pass filter of $R = 10\\,k\\Omega$ and $C = 0.003\\,\\mu\\text{F}$",
+    "options": {
+        "a)": "1 kHz",
+        "b)": "10 kHz",
+        "c)": "2 kHz",
+        "d)": "5 kHz"
+    },
+    "correct_option": "d)",
+    "explanation": "f_c = 1/(2πRC) = 1/(2π × 10^4 × 3 × 10^-9) ≈ 5.3 kHz."
+},
+{
+    "question": "In a linear op-amp circuit",
+    "options": {
+        "a)": "The product of gain and bandwidth is constant",
+        "b)": "Input can be dc only",
+        "c)": "Input can be ac only",
+        "d)": "None of these"
+    },
+    "correct_option": "a)",
+    "explanation": "The gain-bandwidth product remains constant in op-amp design."
+},
+{
+    "question": "Which of the following circuit uses op-amp in open loop configuration?",
+    "options": {
+        "a)": "Comparator",
+        "b)": "Summing amplifier",
+        "c)": "Integrating amplifier",
+        "d)": "Logarithmic amplifier"
+    },
+    "correct_option": "a)",
+    "explanation": "A comparator uses op-amp in open-loop to compare voltage levels."
+},
+{
+    "question": "The slew rate for an ideal op-amp is",
+    "options": {
+        "a)": "Very slow",
+        "b)": "Slow",
+        "c)": "Finite",
+        "d)": "Infinitely fast"
+    },
+    "correct_option": "d)",
+    "explanation": "An ideal op-amp can respond instantaneously to any input change, implying an infinite slew rate."
+},
+{
+    "question": "If input  is triangular, the output of an integrator will be",
+    "options": {
+        "a)": "Square wave",
+        "b)": "Sine wave",
+        "c)": "Triangular wave",
+        "d)": "Spikes"
+    },
+    "correct_option": "a)",
+    "explanation": "The integration of a triangular waveform results in a square wave."
+},
+{
+    "question": "A 741 op-amp has a gain bandwidth product of 1 MHz. A non-inverting amplifier using this op-amp and having a voltage gain of 20dB will exhibit a 3dB bandwidth of",
+    "options": {
+        "a)": "50 kHz",
+        "b)": "100 kHz",
+        "c)": "1000 kHz",
+        "d)": "25 kHz"
+    },
+    "correct_option": "b)",
+    "explanation": "20 dB gain corresponds to a voltage gain of 10. Bandwidth = Gain Bandwidth Product / Gain = 1 MHz / 10 = 100 kHz."
+},
+{
+    "question": "Which of the following electrical characteristics is not exhibited by an ideal op-amp?",
+    "options": {
+        "a)": "Infinite voltage gain",
+        "b)": "Infinite bandwidth",
+        "c)": "Infinite output resistance",
+        "d)": "Infinite slew rate"
+    },
+    "correct_option": "c)",
+    "explanation": "An ideal op-amp has zero output resistance, not infinite."
+},
+{
+    "question": "Calculate the output voltage for the difference amplifier, assuming gain of the amplifier, A = 4, Vin1= 12 V, Vin2 =9 V",
+    "options": {
+        "a)": "Vo = 7 V",
+        "b)": "Vo = 5.9 V",
+        "c)": "Vo = 12 V",
+        "d)": "Vo = 11.4 V"
+    },
+    "correct_option": "c)",
+    "explanation": "Using the differential amplifier formula Vo = A(V1 - V2) = 4(12 - 9) = 12 V."
+},
+{
+    "question": "What happens if any positive input signal is applied to open loop configuration of op-amp",
+    "options": {
+        "a)": "Output reaches saturation level",
+        "b)": "Output is a sine wave",
+        "c)": "No output",
+        "d)": "None of these"
+    },
+    "correct_option": "a)",
+    "explanation": "In open-loop configuration, even a small input causes the op-amp to saturate to its maximum output level."
+},
+{
+    "question": "Why differential amplifiers are preferred for instrumentation and industrial applications",
+    "options": {
+        "a)": "Input resistance is low",
+        "b)": "Produce amplified output",
+        "c)": "Amplify individual input",
+        "d)": "Reject common mode voltage"
+    },
+    "correct_option": "d)",
+    "explanation": "Differential amplifiers reject common-mode noise, which is critical in industrial environments."
+},
+{
+    "question": "Which is not present in the internal circuit of operational amplifier?",
+    "options": {
+        "a)": "Differential Amplifier",
+        "b)": "Level Shifter",
+        "c)": "Clamper",
+        "d)": "Output Driver"
+    },
+    "correct_option": "c)",
+    "explanation": "Clampers are external circuits; they are not part of standard op-amp internal architecture."
+}
+
+
+]

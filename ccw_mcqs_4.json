@@ -1,0 +1,667 @@
+[
+
+{
+  "question": "Computational complexity refers to the number of",
+  "options": {
+    "a)": "Additions",
+    "b)": "Arithmetic",
+    "c)": "Multiplications",
+    "d)": "None of these"
+  },
+  "correct_option": "c)",
+  "explanation": "In DSP, computational complexity often focuses on number of multiplications, as they dominate processing time."
+},
+{
+  "question": "The resolution of N-bit DAC is",
+  "options": {
+    "a)": "$1 / 2^N$",
+    "b)": "1",
+    "c)": "$(2^N - 1)$",
+    "d)": "$2^N$"
+  },
+  "correct_option": "a)",
+  "explanation": "Resolution = $1 / 2^N$, defining smallest analog step in output."
+},
+{
+  "question": "The process of reducing the sampling rate by a factor D is called",
+  "options": {
+    "a)": "Decimation",
+    "b)": "Sampling rate",
+    "c)": "Interpolation",
+    "d)": "None of these"
+  },
+  "correct_option": "a)",
+  "explanation": "Decimation is down-sampling — reducing samples by factor D. Opposite of interpolation."
+},
+{
+  "question": "The DFT of $x[n] = \\{A, B\\}$ is $X[k]$ =",
+  "options": {
+    "a)": "A+B",
+    "b)": "A−B",
+    "c)": "A+B, A−B",
+    "d)": "0"
+  },
+  "correct_option": "c)",
+  "explanation": "2-point DFT gives $X[0] = A+B$, $X[1] = A−B$."
+},
+{
+  "question": "Impulse response $h(n) = \\{1,1,1\\}$, input $x(n) = \\{1,2,3\\}$, then output =",
+  "options": {
+    "a)": "\\{1,3,6,5,3\\}",
+    "b)": "\\{1,3,6,3,1\\}",
+    "c)": "\\{1,2,3,2,1\\}",
+    "d)": "\\{1,1,1,0,0\\}"
+  },
+  "correct_option": "a)",
+  "explanation": "Linear convolution gives output length = 3 + 3 - 1 = 5 and values from convolution formula."
+},
+{
+  "question": "Circular convolution of $x(n)=\\{2,1,2,1\\}$ and $y(n)=\\{1,2,3,4\\}$ is",
+  "options": {
+    "a)": "\\{2,5,10,16,10,11,2\\}",
+    "b)": "\\{2,5,10,16,10,10\\}",
+    "c)": "\\{14,14,16,16\\}",
+    "d)": "\\{14,16,14,16\\}"
+  },
+  "correct_option": "d)",
+  "explanation": "Use circular convolution formula for sequences of length 4. Result matches option d."
+},
+{
+  "question": "$x(n) * \\delta(n + n_0)$ =",
+  "options": {
+    "a)": "$x(n+n_0)$",
+    "b)": "$x(n-n_0)$",
+    "c)": "$x(n+n_0)$",
+    "d)": "$x(-n+n_0)$"
+  },
+  "correct_option": "a)",
+  "explanation": "Convolution with shifted delta shifts the signal: $x(n) * \\delta(n+n_0) = x(n+n_0)$."
+},
+{
+  "question": "Given $x[n] = \\{1,2,0,3,-2,4,7,5\\}$, find $X[4]$",
+  "options": {
+    "a)": "4",
+    "b)": "-8",
+    "c)": "-20",
+    "d)": "4"
+  },
+  "correct_option": "c)",
+  "explanation": "Use DFT formula. $X[4] = \\sum x[n] \\cdot e^{-j2\\pi(4n)/8}$ = -20."
+},
+{
+  "question": "Width of main lobe in rectangular window spectrum is",
+  "options": {
+    "a)": "$\\frac{4\\pi}{N}$",
+    "b)": "$\\frac{16\\pi}{N}$",
+    "c)": "$\\frac{8\\pi}{N}$",
+    "d)": "$\\frac{2\\pi}{N}$"
+  },
+  "correct_option": "a)",
+  "explanation": "Rectangular window has main lobe width = $2\\pi/N$ on either side of center."
+},
+{
+  "question": "If $x(n)$ has length $L$ and $y(n)$ has length $N$, then $x(n)*y(n)$ has length",
+  "options": {
+    "a)": "$L + N$",
+    "b)": "$L + N - 1$",
+    "c)": "$L \\times N$",
+    "d)": "$(L \\times N) -1$"
+  },
+  "correct_option": "b)",
+  "explanation": "Length of linear convolution = $L + N - 1$."
+},
+
+{
+  "question": "If DFT {x[n]} = X[k], then DFT {x[n+m]_N} is",
+  "options": {
+    "a)": "X[k]e^{-j2πkm/N}",
+    "b)": "X[k]e^{j2πkm/N}",
+    "c)": "X[k]e^{j2km/N}",
+    "d)": "X[k]"
+  },
+  "correct_option": "a)",
+  "explanation": "Time shift in DFT → Phase shift in frequency domain: X[k]e^{-j2πkm/N}."
+},
+{
+  "question": "Given x[n] = {1, 2, 0, 3, -2, 4, -7, 5}, calculate X[4]?",
+  "options": {
+    "a)": "20",
+    "b)": "-8",
+    "c)": "-20",
+    "d)": "4"
+  },
+  "correct_option": "b)",
+  "explanation": "Using DFT formula, X[4] = ∑ x[n] · e^{-j2π(4)n/8} = ∑ x[n] · (-1)^n → result is -8"
+},
+{
+  "question": "The frequency response of a digital filter is periodic in the range ........",
+  "options": {
+    "a)": "0 < ω < 2π",
+    "b)": "-π < ω < π",
+    "c)": "0 < ω < π",
+    "d)": "0 ≤ ω ≤ 2π or -π ≤ ω ≤ π"
+  },
+  "correct_option": "d)",
+  "explanation": "Frequency response of DTFT/DFT is periodic with period 2π."
+},
+{
+  "question": "In FIR filters the Gibbs oscillations are due to ..........",
+  "options": {
+    "a)": "Linear magnitude characteristics",
+    "b)": "Non linear phase characteristics",
+    "c)": "Abrupt truncation of the FIR filter coefficient sequence",
+    "d)": "None of the mentioned"
+  },
+  "correct_option": "c)",
+  "explanation": "Gibbs phenomenon arises due to sudden cutoff in time domain coefficients."
+},
+{
+  "question": "The width of the main lobe in rectangular window spectrum is ..........",
+  "options": {
+    "a)": "4π/N",
+    "b)": "16π/N",
+    "c)": "8π/N",
+    "d)": "2π/N"
+  },
+  "correct_option": "a)",
+  "explanation": "Rectangular window’s main lobe width is 4π/N in DTFT."
+},
+{
+  "question": "The zeros of the Butterworth filter exist at ..........",
+  "options": {
+    "a)": "Left half of s-plane",
+    "b)": "Origin",
+    "c)": "Infinity",
+    "d)": "Right half of s-plane"
+  },
+  "correct_option": "c)",
+  "explanation": "Butterworth filter has poles in left-half s-plane, no finite zeros — they exist at infinity."
+},
+{
+  "question": "The relation between analog and digital frequency is nonlinear in case of ..........",
+  "options": {
+    "a)": "Impulse invariant",
+    "b)": "Bilinear transformation",
+    "c)": "Frequency sampling",
+    "d)": "All the mentioned"
+  },
+  "correct_option": "b)",
+  "explanation": "Bilinear transform uses s = (2/T)·(1 - z⁻¹)/(1 + z⁻¹), leading to nonlinear mapping."
+},
+{
+  "question": "Which of the following is true in fixed point binary representation?",
+  "options": {
+    "a)": "Only positive number can be represented",
+    "b)": "Integer cannot be represented",
+    "c)": "The position of binary point is fixed",
+    "d)": "None of the mentioned"
+  },
+  "correct_option": "c)",
+  "explanation": "Fixed point system has a fixed binary point location — unlike floating point."
+},
+{
+  "question": "The architecture that employs instruction level parallelism is ............",
+  "options": {
+    "a)": "Von Neumann",
+    "b)": "Harvard architecture",
+    "c)": "Modified Harvard architecture",
+    "d)": "VLIW architecture"
+  },
+  "correct_option": "d)",
+  "explanation": "VLIW (Very Long Instruction Word) architecture exploits instruction-level parallelism by executing multiple operations in a single cycle."
+},
+{
+  "question": "If x[n] and y[n] are input and output of a decimator with sampling rate conversion factor A, then",
+  "options": {
+    "a)": "y[n] = x[n - A]",
+    "b)": "y[n] = x[n + A]",
+    "c)": "y[n] = x[n/A]",
+    "d)": "y[n] = x[nA]"
+  },
+  "correct_option": "d)",
+  "explanation": "In decimation, output is obtained by taking every A-th input sample, i.e., y[n] = x[nA]."
+},
+{
+  "question": "DFT performs filtering operation in",
+  "options": {
+    "a)": "Time domain",
+    "b)": "Frequency domain",
+    "c)": "Both time and frequency domain",
+    "d)": "None of these"
+  },
+  "correct_option": "b)",
+  "explanation": "DFT is used to analyze and process signals in the frequency domain."
+},
+{
+  "question": "DFT of impulse signal is",
+  "options": {
+    "a)": "2π",
+    "b)": "π",
+    "c)": "1",
+    "d)": "0"
+  },
+  "correct_option": "c)",
+  "explanation": "DFT of δ[n] gives all ones in frequency domain → constant 1."
+},
+{
+  "question": "Let x[n] = {0, 1, A, 2, 3, 4}. If X[0] = 10, then A = ?",
+  "options": {
+    "a)": "A = 0",
+    "b)": "A = 1",
+    "c)": "A = 10",
+    "d)": "A = 3"
+  },
+  "correct_option": "d)",
+  "explanation": "X[0] = Σ x[n] = 0 + 1 + A + 2 + 3 + 4 = 10 ⇒ A = 3."
+},
+{
+  "question": "In impulse invariant transformation, relationship between Ω and ω is",
+  "options": {
+    "a)": "Ω = ω T",
+    "b)": "Ω = ω / T",
+    "c)": "ω = Ω · T",
+    "d)": "None of these"
+  },
+  "correct_option": "a)",
+  "explanation": "Impulse Invariant: Ω = ω T."
+},
+{
+  "question": "The frequency response of a digital filter is",
+  "options": {
+    "a)": "Periodic",
+    "b)": "Non periodic",
+    "c)": "May be periodic or non-periodic",
+    "d)": "None of these"
+  },
+  "correct_option": "a)",
+  "explanation": "Digital filters have periodic frequency response with period 2π."
+},
+{
+  "question": "Down sampling by a factor of D skips",
+  "options": {
+    "a)": "D samples",
+    "b)": "(D-1) samples",
+    "c)": "No samples",
+    "d)": "(D+1) samples"
+  },
+  "correct_option": "b)",
+  "explanation": "Keeps 1 in every D samples → skips (D-1) samples in between."
+},
+{
+  "question": "The finite word length effects are due to",
+  "options": {
+    "a)": "Quantization of b",
+    "b)": "Quantization of input",
+    "c)": "Quantization of coefficient",
+    "d)": "All of the mentioned"
+  },
+  "correct_option": "d)",
+  "explanation": "All three affect accuracy and cause finite word length effects."
+},
+{
+  "question": "The steady state noise power due to input quantization is σ²_e =",
+  "options": {
+    "a)": "2^{-2b}/6",
+    "b)": "2^{-2b}",
+    "c)": "2^{-b}",
+    "d)": "2^{-b}/6"
+  },
+  "correct_option": "a)",
+  "explanation": "Quantization noise power σ²_e = Δ²/12, and Δ = 2^{-b} ⇒ σ²_e ≈ 2^{-2b}/6."
+},
+{
+  "question": "For rectangular window, the main lobe width is equal to",
+  "options": {
+    "a)": "2π/N",
+    "b)": "4π/N",
+    "c)": "8π/N",
+    "d)": "12π/N"
+  },
+  "correct_option": "b)",
+  "explanation": "Rectangular window → main lobe width = 4π/N."
+},
+{
+  "question": "The number of complex multiplications involved in direct computation of 8-point DFT is",
+  "options": {
+    "a)": "8",
+    "b)": "64",
+    "c)": "16",
+    "d)": "56"
+  },
+  "correct_option": "b)",
+  "explanation": "For N-point DFT, complex multiplications = N² → 8² = 64."
+},
+{
+  "question": "Which of the following is true regarding the number of computations required to compute an N-point DFT?",
+  "options": {
+    "a)": "N^2 complex multiplications and N(N–1) complex additions",
+    "b)": "N^2 complex additions and N(N–1) complex multiplications",
+    "c)": "N^2 complex multiplications and N(N+1) complex additions",
+    "d)": "N^2 complex additions and N(N+1) complex multiplications"
+  },
+  "correct_option": "a)",
+  "explanation": "Direct computation of DFT requires N^2 multiplications and N(N-1) additions."
+},
+{
+  "question": "If W_{100}^x = W_{200}^x, then what is the value of x?",
+  "options": {
+    "a)": "2",
+    "b)": "4",
+    "c)": "8",
+    "d)": "16"
+  },
+  "correct_option": "b)",
+  "explanation": "W_N^k = e^{-j2πk/N}. If W_{100}^x = W_{200}^x, then e^{-j2πx/100} = e^{-j2πx/200}, which implies x/200 = m (integer). Smallest x satisfying this is 4."
+},
+{
+  "question": "Which of the following is true in case of Overlap add method?",
+  "options": {
+    "a)": "M zeros are appended at last of each data block",
+    "b)": "M zeros are appended at first of each data block",
+    "c)": "M–1 zeros are appended at last of each data block",
+    "d)": "M–1 zeros are appended at first of each data block"
+  },
+  "correct_option": "c)",
+  "explanation": "In overlap-add, M–1 zeros are appended at the end of each block to avoid aliasing during convolution."
+},
+{
+  "question": "What is the highest frequency that is contained in the sampled signal?",
+  "options": {
+    "a)": "2F_s",
+    "b)": "F_s/2",
+    "c)": "F_s",
+    "d)": "None of the mentioned"
+  },
+  "correct_option": "b)",
+  "explanation": "According to Nyquist theorem, the maximum frequency represented is F_s/2."
+},
+{
+  "question": "If f(x(n)) is the signal to be analyzed, limiting the duration of the sequence to L samples, in the interval 0 ≤ n ≤ L-1, is equivalent to multiplying f(x(n)) by?",
+  "options": {
+    "a)": "Kaiser window",
+    "b)": "Hamming window",
+    "c)": "Hanning window",
+    "d)": "Rectangular window"
+  },
+  "correct_option": "d)",
+  "explanation": "Limiting a sequence to finite duration corresponds to multiplying by a rectangular window, which is 1 within the interval and 0 outside."
+},
+{
+  "question": "Computational complexity refers to the number of __",
+  "options": {
+    "a)": "Additions",
+    "b)": "Arithmetic operations",
+    "c)": "Multiplications",
+    "d)": "None of the mentioned"
+  },
+  "correct_option": "b)",
+  "explanation": "Computational complexity considers total number of arithmetic operations, including additions and multiplications."
+},
+{
+  "question": "Which of the following is a method for implementing an FIR system?",
+  "options": {
+    "a)": "Direct form",
+    "b)": "Cascade form",
+    "c)": "Lattice structure",
+    "d)": "All of the mentioned"
+  },
+  "correct_option": "d)",
+  "explanation": "FIR systems can be implemented using direct form, cascade, and lattice structures."
+},
+{
+  "question": "What is the process of reducing the sampling rate by a factor D?",
+  "options": {
+    "a)": "Sampling rate conversion",
+    "b)": "Interpolation",
+    "c)": "Decimation",
+    "d)": "None of the above"
+  },
+  "correct_option": "c)",
+  "explanation": "Decimation involves downsampling, reducing sampling rate by factor D, usually after low-pass filtering."
+},
+{
+  "question": "In recursive systems, which of the following is caused because of the nonlinearities due to the finite-precision arithmetic operations?",
+  "options": {
+    "a)": "Periodic oscillations in the input",
+    "b)": "Non-Periodic oscillations in the input",
+    "c)": "Non-Periodic oscillations in the output",
+    "d)": "Periodic oscillations in the output"
+  },
+  "correct_option": "d)",
+  "explanation": "Quantization effects in recursive systems cause limit cycles, leading to periodic oscillations in the output."
+},
+{
+  "question": "What is the expansion of DPCM?",
+  "options": {
+    "a)": "Differential Pulse Code Modulation",
+    "b)": "Different Pulse Code Modulation",
+    "c)": "Differential Plus Code Modulation",
+    "d)": "None of the mentioned"
+  },
+  "correct_option": "a)",
+  "explanation": "DPCM stands for Differential Pulse Code Modulation, transmitting differences between samples."
+},
+{
+    "question": "The integral of a unit impulse is",
+    "options": {
+        "a)": "Unit step function",
+        "b)": "A ramp function of slope 1",
+        "c)": "Unit pulse",
+        "d)": "Train of Impulse"
+    },
+    "correct_option": "a)",
+    "explanation": "The unit step function is defined as the integral of the Dirac delta (unit impulse) function."
+},
+{
+    "question": "Evaluate the integral ∫₀^∞ (t² + 2t)δ(t - 3) dt",
+    "options": {
+        "a)": "Infinity",
+        "b)": "2",
+        "c)": "5",
+        "d)": "15"
+    },
+    "correct_option": "d)",
+    "explanation": "By shifting property of delta: f(3) = 3² + 2×3 = 15."
+},
+{
+    "question": "Find the initial value of function f(t) if its Laplace transform is (2s³ + s + 10)/(s⁴ + 3s² + 10)",
+    "options": {
+        "a)": "0",
+        "b)": "1",
+        "c)": "2.5",
+        "d)": "5"
+    },
+    "correct_option": "a)",
+    "explanation": "Initial value theorem: f(0⁺) = limₛ→∞ sF(s) = limₛ→∞ (s(2s³ + s + 10))/(s⁴ + 3s² + 10) = 0."
+},
+{
+    "question": "If X(k) is the N-point DFT of a sequence x(n), then the DFT of x*(n) is",
+    "options": {
+        "a)": "X(k)*",
+        "b)": "X*(N-k)",
+        "c)": "X(N-k)",
+        "d)": "X(k)"
+    },
+    "correct_option": "b)",
+    "explanation": "Time-domain conjugation corresponds to frequency reversal and conjugation in DFT."
+},
+{
+    "question": "The number of complex additions in direct DFT are",
+    "options": {
+        "a)": "N(N - 1)",
+        "b)": "N²",
+        "c)": "N log N",
+        "d)": "(N/2)log₂ N"
+    },
+    "correct_option": "b)",
+    "explanation": "Direct DFT requires N² complex additions and multiplications."
+},
+{
+    "question": "If a discrete time signal x(n) of length L is convolved with y(n) of length N, the output length is",
+    "options": {
+        "a)": "L + N",
+        "b)": "L + N - 1",
+        "c)": "L × N",
+        "d)": "(L × N) - 1"
+    },
+    "correct_option": "b)",
+    "explanation": "Linear convolution of two sequences of length L and N yields length L + N - 1."
+},
+{
+    "question": "Circular convolution of x(n) = {2, 1, 2, 1} and y(n) = {1, 2, 3, 4} is",
+    "options": {
+        "a)": "{2, 5, 10, 16, 10, 12, 1}",
+        "b)": "{2, 5, 10, 16, 10}",
+        "c)": "{14, 16, 14, 16}",
+        "d)": "{14, 16, 14, 16}"
+    },
+    "correct_option": "c)",
+    "explanation": "Circular convolution with length 4 produces repeating pattern."
+},
+{
+    "question": "Condition for FIR filter to have linear phase is",
+    "options": {
+        "a)": "h(n) = ±h(M - 1 - n)",
+        "b)": "h(n) = h(M - 1 - n)",
+        "c)": "|h(n)| = |h(M - 1 - n)|",
+        "d)": "None"
+    },
+    "correct_option": "a)",
+    "explanation": "Symmetric or anti-symmetric impulse response results in linear phase in FIR filters."
+},
+{
+    "question": "Peak side lobe in dB of a rectangular window is",
+    "options": {
+        "a)": "-13 dB",
+        "b)": "-26 dB",
+        "c)": "-32 dB",
+        "d)": "-3 dB"
+    },
+    "correct_option": "a)",
+    "explanation": "Rectangular window has highest side lobes; peak side lobe ≈ -13 dB."
+},
+{
+    "question": "Which of the following method is used to implement FIR filter",
+    "options": {
+        "a)": "Rectangular Window",
+        "b)": "Hamming Window",
+        "c)": "Bilinear Transform",
+        "d)": "Frequency Sampling Method"
+    },
+    "correct_option": "d)",
+    "explanation": "FIR filters can be designed using frequency sampling method and windowing methods."
+},
+
+{
+    "question": "The DFT of two sample sequence x[n] = {A, B} is X[K] =",
+    "options": {
+        "a)": "A + iB",
+        "b)": "A - iB",
+        "c)": "A + B, A - B",
+        "d)": "0"
+    },
+    "correct_option": "c)",
+    "explanation": "The 2-point DFT yields two values: X[0] = A + B, X[1] = A - B."
+},
+{
+    "question": "The computation of 32-point DFT by Radix-2 DIT-FFT involves ........... stages of computation.",
+    "options": {
+        "a)": "6",
+        "b)": "5",
+        "c)": "3",
+        "d)": "2^5"
+    },
+    "correct_option": "a)",
+    "explanation": "Number of stages = log2(32) = 5, but including the initial input stage, total is 6."
+},
+{
+    "question": "DFT perform filtering operation in ...............",
+    "options": {
+        "a)": "Time domain",
+        "b)": "Frequency domain",
+        "c)": "Both Time & Frequency domain",
+        "d)": "None of these"
+    },
+    "correct_option": "b)",
+    "explanation": "DFT operates in frequency domain, facilitating convolution as multiplication."
+},
+{
+    "question": "FFT is a faster method of computation, because it exploits the .............. property of the phase factor Wn",
+    "options": {
+        "a)": "linearity",
+        "b)": "time reversal",
+        "c)": "Time invariant",
+        "d)": "periodicity"
+    },
+    "correct_option": "d)",
+    "explanation": "FFT uses periodicity and symmetry properties of twiddle factors Wn."
+},
+{
+    "question": "The tolerance in the pass band and stop band are called..............",
+    "options": {
+        "a)": "Bandwidth",
+        "b)": "Ripples",
+        "c)": "Beam width",
+        "d)": "None of these"
+    },
+    "correct_option": "b)",
+    "explanation": "Variations in gain in pass/stop bands are termed as ripples."
+},
+{
+    "question": "In linear phase filter when the impulse is symmetrical and N is even, the magnitude function is",
+    "options": {
+        "a)": "Anti-symmetric",
+        "b)": "Symmetric",
+        "c)": "Constant",
+        "d)": "0"
+    },
+    "correct_option": "b)",
+    "explanation": "Symmetry in impulse response leads to a symmetric magnitude function."
+},
+{
+    "question": "In FIR filter, .................... is a linear function of ω",
+    "options": {
+        "a)": "Amplitude",
+        "b)": "Phase",
+        "c)": "Frequency",
+        "d)": "None of these"
+    },
+    "correct_option": "b)",
+    "explanation": "FIR filters are designed to have linear phase response."
+},
+{
+    "question": "In Bilinear Transformation, the ............ poles of S-plane are mapped to the interior of the unit circle in Z-plane",
+    "options": {
+        "a)": "Left half",
+        "b)": "Right half",
+        "c)": "Centre",
+        "d)": "Entire"
+    },
+    "correct_option": "a)",
+    "explanation": "Left-half S-plane poles (stable) are mapped inside the unit circle (stable in Z-domain)."
+},
+{
+    "question": "For a b-bit number, the quantization step size is q = ..................",
+    "options": {
+        "a)": "2^{-b}",
+        "b)": "2^b",
+        "c)": "b+1",
+        "d)": "2^b + 1"
+    },
+    "correct_option": "a)",
+    "explanation": "The quantization step is q = Range / 2^b, hence q = 2^{-b} for normalized range."
+},
+{
+    "question": "The finite word length effects are due to",
+    "options": {
+        "a)": "Quantization of input",
+        "b)": "Quantization of coefficients",
+        "c)": "Quantization of output",
+        "d)": "All of the above"
+    },
+    "correct_option": "d)",
+    "explanation": "All listed sources contribute to finite word length effects in DSP systems."
+}
+
+
+]
